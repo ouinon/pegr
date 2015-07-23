@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    
+    RewriteEngine on
+    
+    # Redirect a whole subdirectory:
+    RewriteRule ^node/(.+) http://localhost:8090/$1 [P]
+    
+</IfModule>
