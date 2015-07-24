@@ -2,15 +2,16 @@
 // http://stackoverflow.com/questions/24477035/express-4-0-express-session-with-odd-warning-message
 // https://gist.github.com/stagas/754303
 var express = require('express')
-, env = require('node-env-file')(__dirname + '/../.env')
+, env = require('node-env-file')
 , passport = require('passport')
 , sessions = require('express-session')
 , util = require('util')
-, Cloudant = require('cloudant')({account: process.env.CLOUDANT_ACCOUNT, password: process.env.CLOUDANT_MASTER_PW})
-// , Cloudant = require('cloudant')("https://ouinon:cDogmaticd2011@ouinon.cloudant.com")
+, Cloudant = require('Cloudant')
 , GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
-// env(__dirname + '/../.env');
+env(__dirname + '/../.env');
+Cloudant({account: process.env.CLOUDANT_ACCOUNT, password: process.env.CLOUDANT_MASTER_PW});
+
 console.log(Cloudant);
 
 // Cloudant({account:process.env.CLOUDANT_USERNAME,username:process.env.CLOUDANT_KEY, password:process.env.CLOUDANT_PASSWORD}, function(er, cloudant, reply) {
