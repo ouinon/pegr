@@ -2,15 +2,28 @@
 // http://stackoverflow.com/questions/24477035/express-4-0-express-session-with-odd-warning-message
 // https://gist.github.com/stagas/754303
 var express = require('express')
+, env = require('node-env-file')(__dirname + '/../.env')
 , passport = require('passport')
 , sessions = require('express-session')
 , util = require('util')
+, Cloudant = require('cloudant')({account: process.env.CLOUDANT_ACCOUNT, password: process.env.CLOUDANT_MASTER_PW})
+// , Cloudant = require('cloudant')("https://ouinon:cDogmaticd2011@ouinon.cloudant.com")
 , GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
+
+// env(__dirname + '/../.env');
+console.log(Cloudant);
+
+// Cloudant({account:process.env.CLOUDANT_USERNAME,username:process.env.CLOUDANT_KEY, password:process.env.CLOUDANT_PASSWORD}, function(er, cloudant, reply) {
+//   if (er)
+//     throw er
+
+//   console.log('Connected with username: %s', reply.userCtx.name)
+// })
 
 // API Access link for creating client ID and secret:
 // https://code.google.com/apis/console/
-var GOOGLE_CLIENT_ID = "856529237741-fiupr834gedcuck1dgqlrftuadoltck5.apps.googleusercontent.com";
-var GOOGLE_CLIENT_SECRET = "jptHAFYnSL_YjR6wvsDEUARu";
+// console.log(process.env);
+process.exit();
 
 passport.serializeUser(function(user, done) {
     done(null, user);
@@ -19,15 +32,13 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(obj, done) {
     done(null, obj);
 });
-
-
 // Use the GoogleStrategy within Passport.
 //   Strategies in Passport require a `verify` function, which accept
 //   credentials (in this case, an accessToken, refreshToken, and Google
 //   profile), and invoke a callback with a user object.
 passport.use(new GoogleStrategy({
-    clientID: GOOGLE_CLIENT_ID,
-    clientSecret: GOOGLE_CLIENT_SECRET,
+    clientID: process.env.GOOGLE_CLIENT_ID,
+    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     callbackURL: "http://localhost:8090/auth/google/callback"
     },
     function(accessToken, refreshToken, profile, done) {
