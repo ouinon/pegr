@@ -1,16 +1,26 @@
-// http://stackoverflow.com/questions/28277094/req-session-passport-and-req-user-empty-serializeuser-and-deserializeuser-are-n
-// http://stackoverflow.com/questions/24477035/express-4-0-express-session-with-odd-warning-message
-// https://gist.github.com/stagas/754303
 var express = require('express')
 , env = require('node-env-file')
 , passport = require('passport')
 , sessions = require('express-session')
+, cookieParser = require('cookie-parser')
 , util = require('util')
 , Cloudant = require('Cloudant')
 , GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
 env(__dirname + '/../.env');
-Cloudant({account: process.env.CLOUDANT_ACCOUNT, password: process.env.CLOUDANT_MASTER_PW});
+
+var cloudant = Cloudant({
+    account: process.env.CLOUDANT_ACCOUNT,
+    password: process.env.CLOUDANT_MASTER_PW,
+    // requestDefaults: { "proxy": "http://localhost:8080/app" }
+    },function(er,cloudant,reply){
+        // if(err) throw err;
+        // console.log(er,cloudant,reply,'first login');
+    });
+
+var cookies = {};
+
+var username = 'example';
 
 console.log(Cloudant);
 
@@ -24,7 +34,7 @@ console.log(Cloudant);
 // API Access link for creating client ID and secret:
 // https://code.google.com/apis/console/
 // console.log(process.env);
-process.exit();
+// process.exit();
 
 passport.serializeUser(function(user, done) {
     done(null, user);
@@ -40,7 +50,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:8090/auth/google/callback"
+    callbackURL: "http://local.pegs.website/node/auth/google/callback"
     },
     function(accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
@@ -61,6 +71,8 @@ var app = express();
 // app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
+app.use(cookieParser());
+
 app.use(sessions({
     genid: function(req) {
 return 'ec666030-7f8f-11e3-ae96-0123456789ab'; // use UUIDs for session IDs
@@ -76,9 +88,12 @@ resave: true
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'));
 
-app.get('/', function(req, res){
+app.get('/node', function(req, res){
+
+    console.log('we got here');
+
     if (req.isAuthenticated()) {
         res.render('index', { user: req.user });
     }else{
@@ -106,14 +121,37 @@ app.get('/auth/google',
     }
 );
 
-app.get('/auth/google/callback', 
+app.get('/auth/google/callback',
     passport.authenticate('google',
         { failureRedirect: '/' }
     ),
     function(req, res) {
-        // console.log(req.user);
-        req.login(req.user,function(){});
-        res.redirect('/');
+
+        cloudant.auth(process.env.CLOUDANT_KEY, process.env.CLOUDANT_PW, function(err, body, headers) {
+          if (err)
+            return console.log('Error authenticating: ' + err.message);
+
+            // console.log('Got cookie for %s: %s', username, headers['set-cookie']);
+
+            // req.login(req.user,function(){});
+            // Get the cookie that it's proposing to set and split it.
+            var cookieA = headers['set-cookie'][0].replace(/[ \w-]+=/g,'').split(';');
+
+            // res.cookie('AuthSession', headers['set-cookie'], { httpOnly: false });
+
+            // You need to set the Authsession, nothing else. This appears to have worked, we'll see.
+            res.cookie('AuthSession',cookieA[0],{httpOnly:false});
+            // res.cookie('AuthSession', 'bWlsdXRoZXJlc3BlcmVkZXJlbGljaGF6OjU1QjREQ0U0OuFWO2QINdFcu2exFztLqRMCjy2G', { httpOnly: false });
+            
+            // res.cookie('AuthSession', headers['set-cookie'], { httpOnly: false });
+
+            res.redirect('/');
+            // res.cookie('sessionid', '1', { httpOnly: true });
+            // console.log(headers['set-cookie']);
+            // Store the authentication cookie for later.
+            cookies[username] = headers['set-cookie'];
+        });
+
     }
 );
 

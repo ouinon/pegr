@@ -1,0 +1,21 @@
+[Fri Jul 24 09:54:53.318256 2015] [proxy:error] [pid 56314] (61)Connection refused: AH00957: HTTP: attempt to connect to [fe80::1]:8090 (*) failed
+[Fri Jul 24 09:54:53.332039 2015] [proxy_http:error] [pid 56314] [client 127.0.0.1:62995] AH01114: HTTP: failed to make connection to backend: localhost
+[Fri Jul 24 10:34:41.799742 2015] [proxy:error] [pid 56314] (61)Connection refused: AH00957: HTTP: attempt to connect to [fe80::1]:8090 (*) failed
+[Fri Jul 24 10:34:41.805909 2015] [proxy_http:error] [pid 56314] [client 127.0.0.1:63893] AH01114: HTTP: failed to make connection to backend: localhost
+[Fri Jul 24 11:56:05.716130 2015] [proxy:error] [pid 56313] (61)Connection refused: AH00957: HTTP: attempt to connect to [fe80::1]:8090 (*) failed
+[Fri Jul 24 11:56:05.716426 2015] [proxy_http:error] [pid 56313] [client 127.0.0.1:49640] AH01114: HTTP: failed to make connection to backend: localhost
+[Fri Jul 24 18:02:39.264573 2015] [core:alert] [pid 59132] [client 127.0.0.1:55292] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here
+[Fri Jul 24 18:02:39.745221 2015] [core:alert] [pid 58343] [client 127.0.0.1:55293] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here, referer: http://local.pegs.website/
+[Fri Jul 24 18:02:40.613709 2015] [core:alert] [pid 58344] [client 127.0.0.1:55294] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here
+[Fri Jul 24 18:02:40.964614 2015] [core:alert] [pid 59133] [client 127.0.0.1:55295] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here, referer: http://local.pegs.website/
+[Fri Jul 24 18:03:55.625875 2015] [proxy:warn] [pid 60227] [client 127.0.0.1:55311] AH01144: No protocol handler was valid for the URL /app. If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule., referer: http://local.pegs.website/
+[Fri Jul 24 18:11:22.384441 2015] [proxy:warn] [pid 60241] [client 127.0.0.1:55413] AH01144: No protocol handler was valid for the URL /app/. If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Fri Jul 24 20:57:45.481527 2015] [core:alert] [pid 60420] [client 127.0.0.1:56309] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here
+[Fri Jul 24 20:57:49.859674 2015] [core:alert] [pid 60460] [client 127.0.0.1:56310] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here
+[Fri Jul 24 21:00:41.635590 2015] [proxy:warn] [pid 60557] [client 127.0.0.1:56363] AH01144: No protocol handler was valid for the URL /other/. If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Fri Jul 24 21:00:42.911743 2015] [proxy:warn] [pid 60557] [client 127.0.0.1:56365] AH01144: No protocol handler was valid for the URL /other/. If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Jul 26 12:40:12.604362 2015] [proxy:warn] [pid 63989] [client 127.0.0.1:60954] AH01144: No protocol handler was valid for the URL /other/. If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Jul 26 12:45:20.418987 2015] [ssl:error] [pid 64028] [remote 5.79.56.16:443] AH01961: SSL Proxy requested for local.pegs.website:80 but not enabled [Hint: SSLProxyEngine]
+[Sun Jul 26 12:45:20.419173 2015] [proxy:error] [pid 64028] AH00961: HTTPS: failed to enable ssl support for 5.79.56.16:443 (ouinon.cloudant.com)
+[Sun Jul 26 12:45:21.176957 2015] [ssl:error] [pid 64028] [remote 5.79.56.16:443] AH01961: SSL Proxy requested for local.pegs.website:80 but not enabled [Hint: SSLProxyEngine]
+[Sun Jul 26 12:45:21.177110 2015] [proxy:error] [pid 64028] AH00961: HTTPS: failed to enable ssl support for 5.79.56.16:443 (ouinon.cloudant.com)

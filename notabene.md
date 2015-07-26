@@ -1,0 +1,1 @@
+- If a cookie is HTTP only, it can't be read by JavaScript.

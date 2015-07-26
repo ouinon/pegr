@@ -1,0 +1,23 @@
+{
+  "name": "d3-pack",
+  "version": "0.0.0",
+  "authors": [
+    "Robert Starbuck <robstarbuck@gmail.com>"
+  ],
+  "description": "\"Just having a quick playaround with D3\"",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-cookies": "~1.4.3",
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.3"
+  }
+}

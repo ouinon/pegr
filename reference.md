@@ -7,3 +7,7 @@ https://gist.github.com/stagas/754303
 http://arguments.callee.info/2010/04/20/running-apache-and-node-js-together/
 
 [Explains a bit about cookies](https://www.twilio.com/blog/2013/08/votr-part-4-angularjs-and-authentication-with-couchdb.html)
+
+[Where to set your Google Cookies](http://code.google.com/apis/console)
+
+[Explained explicitly is something about using the cookie](http://gotoanswer.com/?q=Setting+up+a+virtual+host)

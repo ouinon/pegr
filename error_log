@@ -1,4 +1,0 @@
-[Fri Jul 24 09:54:53.318256 2015] [proxy:error] [pid 56314] (61)Connection refused: AH00957: HTTP: attempt to connect to [fe80::1]:8090 (*) failed
-[Fri Jul 24 09:54:53.332039 2015] [proxy_http:error] [pid 56314] [client 127.0.0.1:62995] AH01114: HTTP: failed to make connection to backend: localhost
-[Fri Jul 24 10:34:41.799742 2015] [proxy:error] [pid 56314] (61)Connection refused: AH00957: HTTP: attempt to connect to [fe80::1]:8090 (*) failed
-[Fri Jul 24 10:34:41.805909 2015] [proxy_http:error] [pid 56314] [client 127.0.0.1:63893] AH01114: HTTP: failed to make connection to backend: localhost
