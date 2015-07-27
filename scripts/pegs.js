@@ -8,17 +8,17 @@ angular.module("pegsApp",['ngCookies','ngResource','ui.router']).config(
 
 				// $http.defaults.headers.common.AuthSession = $cookies.get('sessionid');
 
-				var Res = $resource('http://local.pegs.website/other/_all_docs',{},{
+				var Res = $resource('http://local.pegs.website/other/',{},{
 				        sendcookie: {
 				            method: 'GET'
 				        }
 				});
 
-				var $yo = Res.sendcookie(null,function(){
-					console.log('result');
-				});
+				var $yo = new Res();
 
-	            // $yo.$save(function(){});
+				$yo.somet = ['a','b',{'hl':112}];
+
+	            $yo.$save(function(){});
 
 				$scope.items = ["A", "List", "Of", "Items"];
 			}
