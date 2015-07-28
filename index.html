@@ -2,13 +2,16 @@
 <html ng-app="pegsApp">
 <head>
 	<title></title>
+ 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Neuton:200,300,400,700,800|Anonymous+Pro:400,700|Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/main.css">
 	<base href="/">
 </head>
 <body>
+	<h1>Pegr</h1>
 	<div ui-view>
 		
 	</div>
-	<h1>Something</h1>
 	
 	<!-- bower:js -->
 	<script src="bower_components/angular/angular.js"></script>
@@ -16,6 +19,13 @@
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 	<script src="bower_components/angular-resource/angular-resource.js"></script>
 	<!-- endbower -->
-	<script src="scripts/pegs.js"></script>
+	<script src="scripts/routes.js"></script>
+	<script src="scripts/controllers/home.js"></script>
+	<script src="scripts/directives/o-input.js"></script>
+
+	<script type="text/javascript" src="http://localhost:48626/takana.js"></script>
+	<script type="text/javascript">
+	  takanaClient.run({host: 'localhost:48626'});
+	</script>
 </body>
 </html>

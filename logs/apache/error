@@ -19,3 +19,16 @@
 [Sun Jul 26 12:45:20.419173 2015] [proxy:error] [pid 64028] AH00961: HTTPS: failed to enable ssl support for 5.79.56.16:443 (ouinon.cloudant.com)
 [Sun Jul 26 12:45:21.176957 2015] [ssl:error] [pid 64028] [remote 5.79.56.16:443] AH01961: SSL Proxy requested for local.pegs.website:80 but not enabled [Hint: SSLProxyEngine]
 [Sun Jul 26 12:45:21.177110 2015] [proxy:error] [pid 64028] AH00961: HTTPS: failed to enable ssl support for 5.79.56.16:443 (ouinon.cloudant.com)
+[Mon Jul 27 11:01:50.595240 2015] [proxy_http:error] [pid 64928] (54)Connection reset by peer: [client 127.0.0.1:52647] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
+[Mon Jul 27 11:03:00.059928 2015] [proxy_http:error] [pid 64922] (54)Connection reset by peer: [client 127.0.0.1:52675] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
+[Mon Jul 27 12:18:39.786625 2015] [proxy_http:error] [pid 64929] (54)Connection reset by peer: [client 127.0.0.1:54499] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
+[Mon Jul 27 12:20:34.924626 2015] [proxy_http:error] [pid 64925] (54)Connection reset by peer: [client 127.0.0.1:54551] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
+[Mon Jul 27 14:56:57.725219 2015] [proxy:error] [pid 64927] (51)Network is unreachable: AH00957: HTTPS: attempt to connect to 5.79.56.16:443 (ouinon.cloudant.com) failed
+[Mon Jul 27 14:56:57.727042 2015] [proxy:error] [pid 64927] AH00959: ap_proxy_connect_backend disabling worker for (ouinon.cloudant.com) for 60s
+[Mon Jul 27 14:56:57.727095 2015] [proxy_http:error] [pid 64927] [client 127.0.0.1:55661] AH01114: HTTP: failed to make connection to backend: ouinon.cloudant.com, referer: http://local.pegs.website/
+[Mon Jul 27 14:57:21.563471 2015] [proxy_http:error] [pid 64924] (60)Operation timed out: [client 127.0.0.1:55712] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
+[Mon Jul 27 14:57:25.656573 2015] [proxy:error] [pid 64929] (51)Network is unreachable: AH00957: HTTPS: attempt to connect to 5.79.56.16:443 (ouinon.cloudant.com) failed
+[Mon Jul 27 14:57:25.656724 2015] [proxy:error] [pid 64929] AH00959: ap_proxy_connect_backend disabling worker for (ouinon.cloudant.com) for 60s
+[Mon Jul 27 14:57:25.656738 2015] [proxy_http:error] [pid 64929] [client 127.0.0.1:55791] AH01114: HTTP: failed to make connection to backend: ouinon.cloudant.com, referer: http://local.pegs.website/
+[Tue Jul 28 11:14:10.277515 2015] [proxy:error] [pid 64923] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Tue Jul 28 11:14:10.278602 2015] [proxy_http:error] [pid 64923] [client 127.0.0.1:62744] AH01114: HTTP: failed to make connection to backend: local.pegs.website

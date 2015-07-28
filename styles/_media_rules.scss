@@ -1,0 +1,97 @@
+.m_show#{$class}{
+	display: inherit !important;
+}
+.m_show#{$class}.cll{
+	display: inherit !important;
+}
+.m_hide#{$class}{
+	display: none !important;
+}
+// .cll.Wd25p{
+// 	width:25%;
+// }
+// .cll.Wd50p{
+// 	width:50%;
+// }
+// .cll.Wd75p{
+// 	width:75%;
+// }
+
+.tbl{
+	// Exp = Expand
+	// This is the point at which the table will expand to 100% width.
+	
+	&.m_Exp#{$class}{
+		// margin-bottom: 0;
+
+		 > .cll{
+			display: block;
+			width: 100%;
+			margin-bottom: 3rem;
+			&:last-child{
+				margin-bottom: 0rem !important;
+			}
+			/*margin-bottom: 0;*/
+			&.Wd25p,
+			&.Wd50p,
+			&.Wd75p{
+				// The immmediate child selector has been deliberately ommited here to ensure inheritance. 
+				width:auto !important;
+			}
+		}
+		&.Merge{
+			> .cll{
+				margin-bottom: 0;
+			}
+			> .cll > .btn{
+			  border-radius: 0;
+			}
+			> .cll:first-child > .btn{
+			  border-top-right-radius: 0.2rem;
+			  border-top-left-radius: 0.2rem;
+			}
+			> .cll:last-child > .btn{
+			  border-bottom-right-radius: 0.2rem;
+			  border-bottom-left-radius: 0.2rem;
+			}
+		}
+
+		&.MgB1r-{
+			// The immmediate child selector has been deliberately ommited here to ensure inheritance. 
+			 .cll{
+				margin-bottom: 1rem;
+			}
+		}
+		&.MgB2r-{
+			// The immmediate child selector has been deliberately ommited here to ensure inheritance. 
+			 .cll{
+				margin-bottom: 2rem;
+			}
+		}
+		&.MgB3r-{
+			// The immmediate child selector has been deliberately ommited here to ensure inheritance. 
+			 .cll{
+				margin-bottom: 3rem;
+			}
+		}
+
+		// This is not a modifier for the Auto class in main and not a modifier of the m_Exp class.
+		&.Auto,&.Fll,&.Flr{
+			width: 100%;
+		}
+	}
+}
+.o-box{
+	&.m_Wd100#{$class} > .box{
+		width: 100%;
+	}
+	&.m_Wd50#{$class} > .box{
+		width: 50%;
+	}
+	&.m_Wd33#{$class} > .box{
+		width: 33.33%;
+	}
+	&.m_Wd25#{$class} > .box{
+		width: 25%;
+	}
+}

@@ -1,0 +1,203 @@
+// the third argument in mix is the amount of the first colour to be included
+
+$DK1:mix($DK0,$LT0,10%);
+$DK2:mix($DK0,$LT0,20%);
+$DK3:mix($DK0,$LT0,30%);
+$DK4:mix($DK0,$LT0,40%);
+$DK5:mix($DK0,$LT0,50%);
+$DK6:mix($DK0,$LT0,60%);
+$DK7:mix($DK0,$LT0,70%);
+$DK8:mix($DK0,$LT0,80%);
+$DK9:mix($DK0,$LT0,90%);
+
+$LT1:mix($LT0,$DK0,10%);
+$LT2:mix($LT0,$DK0,20%);
+$LT3:mix($LT0,$DK0,30%);
+$LT4:mix($LT0,$DK0,40%);
+$LT5:mix($LT0,$DK0,50%);
+$LT6:mix($LT0,$DK0,60%);
+$LT7:mix($LT0,$DK0,70%);
+$LT8:mix($LT0,$DK0,80%);
+$LT9:mix($LT0,$DK0,90%);
+
+$A-D1:mix($c_A,$DK0,10%); $A-L1:mix($c_A,$LT0,10%);
+$A-D2:mix($c_A,$DK0,20%); $A-L2:mix($c_A,$LT0,20%);
+$A-D3:mix($c_A,$DK0,30%); $A-L3:mix($c_A,$LT0,30%);
+$A-D4:mix($c_A,$DK0,40%); $A-L4:mix($c_A,$LT0,40%);
+$A-D5:mix($c_A,$DK0,50%); $A-L5:mix($c_A,$LT0,50%);
+$A-D6:mix($c_A,$DK0,60%); $A-L6:mix($c_A,$LT0,60%);
+$A-D7:mix($c_A,$DK0,70%); $A-L7:mix($c_A,$LT0,70%);
+$A-D8:mix($c_A,$DK0,80%); $A-L8:mix($c_A,$LT0,80%);
+$A-D9:mix($c_A,$DK0,90%); $A-L9:mix($c_A,$LT0,90%);
+
+$B-D1:mix($c_B,$DK0,10%); $B-L1:mix($c_B,$LT0,10%);
+$B-D2:mix($c_B,$DK0,20%); $B-L2:mix($c_B,$LT0,20%);
+$B-D3:mix($c_B,$DK0,30%); $B-L3:mix($c_B,$LT0,30%);
+$B-D4:mix($c_B,$DK0,40%); $B-L4:mix($c_B,$LT0,40%);
+$B-D5:mix($c_B,$DK0,50%); $B-L5:mix($c_B,$LT0,50%);
+$B-D6:mix($c_B,$DK0,60%); $B-L6:mix($c_B,$LT0,60%);
+$B-D7:mix($c_B,$DK0,70%); $B-L7:mix($c_B,$LT0,70%);
+$B-D8:mix($c_B,$DK0,80%); $B-L8:mix($c_B,$LT0,80%);
+$B-D9:mix($c_B,$DK0,90%); $B-L9:mix($c_B,$LT0,90%);
+
+$C-D1:mix($c_C,$DK0,10%); $C-L1:mix($c_C,$LT0,10%);
+$C-D2:mix($c_C,$DK0,20%); $C-L2:mix($c_C,$LT0,20%);
+$C-D3:mix($c_C,$DK0,30%); $C-L3:mix($c_C,$LT0,30%);
+$C-D4:mix($c_C,$DK0,40%); $C-L4:mix($c_C,$LT0,40%);
+$C-D5:mix($c_C,$DK0,50%); $C-L5:mix($c_C,$LT0,50%);
+$C-D6:mix($c_C,$DK0,60%); $C-L6:mix($c_C,$LT0,60%);
+$C-D7:mix($c_C,$DK0,70%); $C-L7:mix($c_C,$LT0,70%);
+$C-D8:mix($c_C,$DK0,80%); $C-L8:mix($c_C,$LT0,80%);
+$C-D9:mix($c_C,$DK0,90%); $C-L9:mix($c_C,$LT0,90%);
+
+.c_base{
+	background-color:#FFFCF6;	
+}
+.btn{
+
+	// c_colorrules($bg,$color,$i-color,$bg-hover)
+	@include c_colorrules($c_A,$DK0,$LT0,$A-L8);
+
+	&.c_A,.c_A_ &{
+		@include c_colorrules($c_A,$DK0,$LT0,$A-L8);
+	}
+	&.c_B,.c_B_ &{
+		@include c_colorrules($c_B,$LT0,$DK0,$B-L8);
+	}
+	&.c_C,.c_C_ &{
+		@include c_colorrules($c_C,$DK0,$LT0,$C-L8);
+	}
+	&.c_Lgt,.c_Lgt_ &{
+		@include c_colorrules($LT0,$DK0,$LT0,$LT8);
+	}
+	&.c_Drk,.c_Drk_ &{
+		@include c_colorrules($DK0,$LT0,$DK0,$DK8);
+	}
+	&.c_Clear,.c_Clear_ &{
+		background-color: transparent !important;
+		border-radius:0 !important;
+		&.Icn,.Icn_ &{
+			padding-right: 2rem;
+		}
+		label{
+			padding: 0;
+		}
+		.icn{
+			width: 2rem !important;
+			background: transparent !important;
+		}
+	}
+}
+.o-dropdown.open .dropdown-menu{
+   &.c_Lgt{
+    border: 0.4rem solid $DK7;
+  }
+}
+.o-input{
+	&:after{
+	  background-color: $DK2;
+	}
+	&:hover:after{
+	  background-color: $B-L6;
+	}
+	&.focus{
+		&.Invalid-:hover:after,
+		&.Invalid-:after{
+			background-color: $c_A;
+		}
+		&:hover:after,
+		&:after{
+			background-color: $B-L8;
+		}
+	}
+	&.Icn{
+		.icn{
+			color: rgba(0,0,0,0);
+			@include grad_h($LT0);
+		}
+	}
+	input{
+		background-color: $LT0;
+		&[disabled],&[disabled]:hover{
+			background-color: $DK2;
+		}
+	}
+	&.c_Lgt,.c_Lgt_ &{
+		input{
+			background-color:$LT0;
+		}
+		&.Drk1- input{
+			background-color:$LT9;
+		}
+		&.Drk2- input{
+			background-color:$LT8;
+		}
+		&.Drk3- input{
+			background-color:$LT7;
+		}
+	}
+}
+// Drk2- c_Lgt
+.o-h{
+	&:after{
+	  background-color: $LT0;
+	}
+	&.c_Drk{
+		h1,h2,h3,h4,h5,h6{
+			color: $DK0;
+		}
+		&:after{
+			background-color: $DK0;
+		}
+	}
+}
+
+.tbl{
+  &.Tabs-over{
+    border-color: $DK0 !important;
+    .active{
+      .btn{
+        color: $LT2;
+        background: $LT9;
+        > .icn{
+          @include grad_h($LT9);
+        }
+      }
+    }
+  }
+}
+
+.grp{
+	background-color: $LT9;
+}
+.o-table{
+    border:1px solid $DK0;
+	.btn{
+		background-color: rgba(0,0,0,0);
+	}
+	table{
+	    color: $DK0;
+	}
+	th,td{
+		// Using before is a bit of a hack
+		// As a result of using position relative on the cells there is a border overlap when background color is applied.
+		&.Center-.Icn{
+			.icn,&.active .icn{
+				background-color: transparent;
+				background: none;
+			}
+		}
+		&:before{
+			border-left:1px solid $DK0;
+		}
+	}
+	tr{
+		border-bottom:1px solid $DK0;
+		background-color:$LT9;
+		transition: background 100ms;
+	    .icn{
+	    	transition: background 0ms;
+			@include grad_h($LT9);
+	    }
+	}
+}

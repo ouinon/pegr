@@ -135,12 +135,17 @@ app.get('/auth/google/callback',
 
             // req.login(req.user,function(){});
             // Get the cookie that it's proposing to set and split it.
-            var cookieA = headers['set-cookie'][0].replace(/[ \w-]+=/g,'').split(';');
+            var cookieAr = headers['set-cookie'][0].replace(/[ \w-]+=/g,'').split(';');
 
             // res.cookie('AuthSession', headers['set-cookie'], { httpOnly: false });
+            console.log("req.user",req.user);
 
+            // displayName: 'Rob Starbuck',
+            // name: { familyName: 'Starbuck', givenName: 'Rob' }
             // You need to set the Authsession, nothing else. This appears to have worked, we'll see.
-            res.cookie('AuthSession',cookieA[0],{httpOnly:false});
+            res.cookie('UserId',req.user.id,{httpOnly:false});
+            res.cookie('Name',req.user.displayName,{httpOnly:false});
+            res.cookie('AuthSession',cookieAr[0],{httpOnly:true});
             // res.cookie('AuthSession', 'bWlsdXRoZXJlc3BlcmVkZXJlbGljaGF6OjU1QjREQ0U0OuFWO2QINdFcu2exFztLqRMCjy2G', { httpOnly: false });
             
             // res.cookie('AuthSession', headers['set-cookie'], { httpOnly: false });
@@ -149,7 +154,7 @@ app.get('/auth/google/callback',
             // res.cookie('sessionid', '1', { httpOnly: true });
             // console.log(headers['set-cookie']);
             // Store the authentication cookie for later.
-            cookies[username] = headers['set-cookie'];
+            // cookies[username] = headers['set-cookie'];
         });
 
     }

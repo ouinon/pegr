@@ -1,0 +1,82 @@
+// Default Settings for media
+
+.m_showA{display:none !important;}
+.m_showB{display:none !important;}
+.m_showC{display:none !important;}
+.m_showD{display:none !important;}
+
+.m_hideA{display:initial;}
+.m_hideB{display:initial;}
+.m_hideC{display:initial;}
+.m_hideD{display:initial;}
+
+.m_hideA.tbl{display:table;}
+.m_hideB.tbl{display:table;}
+.m_hideC.tbl{display:table;}
+.m_hideD.tbl{display:table;}
+
+.m_hideA.cll{display:table-cell;}
+.m_hideB.cll{display:table-cell;}
+.m_hideC.cll{display:table-cell;}
+.m_hideD.cll{display:table-cell;}
+
+.cll.Wd25p{
+	width:25%;
+}
+.cll.Wd50p{
+	width:50%;
+}
+.cll.Wd75p{
+	width:75%;
+}
+
+/* This is the point at which button height switches */
+@media only screen and (max-width : $btnHtSwitchWd) {
+	.btn{
+	  height: #{$btnHtB}rem !important;
+	  line-height: #{$btnHtB}rem !important;
+	}
+	.o-input{
+	  input{
+	    height: #{$btnHtB}rem;
+	    line-height: #{$btnHtB}rem;
+	  }
+	  &.Icn{
+	    .icn{
+	      height: #{$btnHtB}rem;
+	      line-height: #{$btnHtB}rem;
+	    }
+	  }
+	}
+}
+
+/* Prefix xl */
+$class:'';
+@import '_media_rules.scss';
+
+
+$class:'D';
+@media only screen and (max-width : $wdD) {
+	@import '_media_rules.scss';
+}
+
+/* Medium Devices, Desktops */
+/* Prefix lg */
+$class:'C';
+@media only screen and (max-width : $wdC) {
+	@import '_media_rules.scss';
+}
+
+/* Small Devices, Tablets */
+/* Prefix md */
+$class:'B';
+@media only screen and (max-width : $wdB) {
+	@import '_media_rules.scss';
+}
+
+/* Extra Small Devices, Phones */ 
+/* Prefix sm */ 
+$class:'A';
+@media only screen and (max-width : $wdA) {
+	@import '_media_rules.scss';
+}

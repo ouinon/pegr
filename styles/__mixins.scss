@@ -1,0 +1,26 @@
+@mixin grad_h($color){
+	background:linear-gradient(to right,  rgba($color,0) 0%,rgba($color,1) 30%,rgba($color,1) 100%);
+}
+@mixin c_colorrules($background,$color,$icontext,$bg-hov){
+	background-color: $background;
+	color: $color;
+	transition: background 200ms;
+	&[disabled]:hover{
+		background-color:$background;
+	}
+	&:hover{
+		transition: background 0ms;
+		background-color: $bg-hov;
+		> .icn{
+			// transition: background 0ms;
+			// @include grad_h($bg-hov);
+		}
+	}
+	> .icn{
+		// transition: background 200ms;
+		// @include grad_h($background);
+		& > span{
+		  color: $icontext;
+		}
+	}
+}

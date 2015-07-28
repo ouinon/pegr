@@ -1,0 +1,341 @@
+$LT0:#FFFCF6;
+$DK0:#000000;
+
+$c_A:#009a66;
+$c_B:#005689;
+$c_C:#FFAA00;
+
+$wdA:480px;
+$wdB:768px;
+$wdC:992px;
+$wdD:1200px;
+
+$cteWdA:600px;
+$cteWdB:940px;
+$cteWdC:1040px;
+
+$btnHt:5;
+$btnHtSwitchWd:$wdB;
+$btnHtB:7;
+
+@import '__mixins.scss';
+
+@import '_reset.scss';
+@import '_color.scss';
+@import '_properties.scss';
+
+html{
+  font-size: 10px;
+}
+body{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: $LT9;
+}
+
+p{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cte{
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  // clear: both
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &.WdA{
+    max-width: $cteWdA;
+  }
+  &.WdB{
+    max-width: $cteWdB;
+  }
+  &.WdC{
+    max-width: $cteWdC;
+  }
+}
+
+// Outer table elements, they ensure correct spaceing of the cells accross the table
+.o-tbl{
+  position: relative;
+  clear: both;
+  &.SpcA{
+    margin: auto -1rem;
+    > .tbl{
+      border-spacing: 1rem 0;
+    }
+  }
+  &.SpcB{
+    margin: auto -2rem;
+    > .tbl{
+      border-spacing: 2rem 0;
+    }
+  }
+  &.SpcC{
+    margin: auto -3rem;
+    > .tbl{
+      border-spacing: 3rem 0;
+    }
+  }
+}
+
+// Table elements
+.tbl
+{
+  table-layout: fixed;
+  display:table;
+  width: 100%;
+  border-spacing: 0;
+  box-sizing:border-box;
+  margin-bottom: 3rem;
+  &.Flr{
+    float: right;
+    width: auto;
+  }
+  &.Fll{
+    float: left;
+    width: auto;
+  }
+  &.Auto{
+    width: auto;
+  }
+  &.Merge{
+    > .cll{
+      > .o-input{
+        border-radius:0rem;
+      }
+      &:first-child > .o-input{
+        border-top-left-radius:0.2rem;
+        border-bottom-left-radius:0.2rem;
+        &:after{
+          border-bottom-left-radius:0.2rem;
+        }
+      }
+      &:last-child  > .o-input{
+        border-top-right-radius:0.2rem;
+        border-bottom-right-radius:0.2rem;
+        &:after{
+          border-bottom-right-radius:0.2rem;
+        }
+      }
+    }
+     > .cll > .btn{
+      border-radius: 0;
+    }
+    > .cll:first-child > .btn{
+      border-top-left-radius: 0.2rem;
+      border-bottom-left-radius: 0.2rem;
+    }
+    > .cll:last-child > .btn{
+      border-top-right-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem;
+    }
+  }
+}
+// Tables within tables should not include a margin bottom
+.tbl .tbl{
+    margin-bottom: 0;
+}
+
+// Cells
+.cll{
+    position: relative;
+    display:table-cell;
+    vertical-align: top;
+}
+
+.h1{
+  font-size: 3rem;
+  // line-height: 3rem;
+  // height: 3rem;
+  margin-bottom: 2rem;
+  vertical-align: top;
+  &.Line{
+    padding-bottom:2rem;
+    border-bottom: 1px solid $DK0;
+  }
+}
+
+// Buttons
+.btn{
+  border-collapse: collapse;
+  border-radius:0.2rem;
+  border:0;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1.5rem;
+  height: #{$btnHt}rem;
+  line-height: #{$btnHt}rem;
+  outline: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: top;
+  width: 100%;
+  &[disabled]{
+    opacity: 0.5;
+    > *{
+      cursor: auto;
+    }
+  }
+  > label, > span{
+    cursor: pointer;
+    padding: 0 1rem;
+    white-space: nowrap;
+    line-height: inherit;
+    height: inherit;
+    display: table-cell;
+  }
+  &.Icn,.Icn_ &{
+    padding-right: 4rem;
+    > label, > span{
+      padding-right: 0;
+    }
+    > .icn{
+      padding: 0;
+      width: 4rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+      > i{
+        width: inherit;
+      }
+    }
+    &.Lft-{
+      padding-left: 4rem;
+      padding-right: 0;
+      > label{
+        padding-left: 0;
+        padding-right: 1rem;
+      }
+      > .icn{  
+        right: initial;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+// Icons
+.icn{
+  height: inherit;
+  line-height: inherit;
+  padding: 0 2rem;
+  position: relative;
+  width: 0px;
+  & > span,
+  & > i{
+    font-size:1.5rem;
+    transition: opacity 200ms;
+    height: inherit;
+    line-height: inherit;
+    opacity: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%; 
+    left: 0; 
+    position: absolute;
+  }
+  & > span{
+    opacity: 1;
+    z-index: 5;
+  }
+  & > .fa:first-child{
+    opacity: 1;
+  }
+  .active & > .fa{
+    opacity: 1;
+  }
+  .active & > .fa:first-child{
+    opacity: 0;
+  }
+  .open > .btn & > .fa{
+    opacity: 1;
+  }
+  .open > .btn & > .fa:first-child{
+    opacity: 0;
+  }
+}
+
+.o-box{
+  clear: both;
+  &.SpcA{
+    margin: 0 -1rem;
+    > .box{
+      padding: 0 1rem;
+    }
+  }
+  &.Wd50 > .box{
+    width: 50%;
+  }
+  &.Wd33 > .box{
+    width: 33.33%;
+  }
+  &.Wd25 > .box{
+    width: 25%;
+  }
+  > .box{
+    float:left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+// Inputs
+.o-input{
+  overflow:hidden;
+  position: relative;
+  border-radius: 0.2rem;
+  &.Icn{
+    .icn{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: #{$btnHt}rem;
+      line-height: #{$btnHt}rem;
+      z-index: 7;
+      border-bottom-right-radius:0.2rem;
+      border-top-right-radius:0.2rem;
+      background: none;
+    }
+  }
+  &:after{
+    display: block;
+    width: 100%;
+    height: 0.5rem;
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 7;
+    transition: height 100ms,background 100ms;
+  }
+  &:hover:after{
+    height: 0.5rem;
+  }
+  &.focus:hover:after,
+  &.focus:after{
+    height: 0.75rem;
+  }
+  input{
+    height: #{$btnHt}rem;
+    line-height: #{$btnHt}rem;
+    width: 100%;
+    display: block;
+    border: 0;
+    outline: 0;
+    padding:0 1rem;
+    position: relative;
+    z-index: 7;
+  }
+}
+
+@import '_media.scss';
