@@ -28,4 +28,11 @@
 		</div>
 	</div>
 	<h1 ng-bind="error"></h1>
+	<div class="o-box SpcA m_Wd50A m_Wd33B m_Wd25C Wd20">
+		<div ng-repeat="key in getKeys(pegs)" class="box">
+			<div class="cll" ng-bind="key"></div>
+			<div class="cll" ng-bind="pegs[key][0]"></div>
+			<span ng-show="peg.input" >:</span>
+		</div>
+	</div>
 </div>

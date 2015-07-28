@@ -282,6 +282,9 @@ p{
   &.Wd25 > .box{
     width: 25%;
   }
+  &.Wd20 > .box{
+    width: 20%;
+  }
   > .box{
     float:left;
     width: 100%;
