@@ -14,9 +14,9 @@ $cteWdA:600px;
 $cteWdB:940px;
 $cteWdC:1040px;
 
-$btnHt:5;
+$btnHt:6;
 $btnHtSwitchWd:$wdB;
-$btnHtB:7;
+$btnHtB:$btnHt;
 
 @import '__mixins.scss';
 

@@ -62,3 +62,19 @@
 .wd50p{width:50% !important;}
 .wd75p{width:75% !important;}
 .wdAuto{width: auto !important;}
+
+.topL,.topR,.btmL,.btmR{
+	position:absolute !important;
+}
+.topL,.topR{
+	top:0 !important;
+}
+.btmL,.btmR{
+	bottom:0 !important;
+}
+.topL,.btmL{
+	left:0 !important;
+}
+.topR,.btmR{
+	right:0 !important;
+}

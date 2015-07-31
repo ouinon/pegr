@@ -19,7 +19,7 @@ var pegValues = {
 	'b':'9'
 }
 
-angular.module('pegsApp',['ngCookies','ngResource','ui.router']).config(
+angular.module('pegsApp',['ngCookies','ngResource','ui.bootstrap.buttons','ui.router']).config(
 	function($locationProvider,$stateProvider){
 	    $stateProvider.state('home', {
 			url: "/",

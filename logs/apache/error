@@ -1,34 +1,46 @@
-[Fri Jul 24 09:54:53.318256 2015] [proxy:error] [pid 56314] (61)Connection refused: AH00957: HTTP: attempt to connect to [fe80::1]:8090 (*) failed
-[Fri Jul 24 09:54:53.332039 2015] [proxy_http:error] [pid 56314] [client 127.0.0.1:62995] AH01114: HTTP: failed to make connection to backend: localhost
-[Fri Jul 24 10:34:41.799742 2015] [proxy:error] [pid 56314] (61)Connection refused: AH00957: HTTP: attempt to connect to [fe80::1]:8090 (*) failed
-[Fri Jul 24 10:34:41.805909 2015] [proxy_http:error] [pid 56314] [client 127.0.0.1:63893] AH01114: HTTP: failed to make connection to backend: localhost
-[Fri Jul 24 11:56:05.716130 2015] [proxy:error] [pid 56313] (61)Connection refused: AH00957: HTTP: attempt to connect to [fe80::1]:8090 (*) failed
-[Fri Jul 24 11:56:05.716426 2015] [proxy_http:error] [pid 56313] [client 127.0.0.1:49640] AH01114: HTTP: failed to make connection to backend: localhost
-[Fri Jul 24 18:02:39.264573 2015] [core:alert] [pid 59132] [client 127.0.0.1:55292] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here
-[Fri Jul 24 18:02:39.745221 2015] [core:alert] [pid 58343] [client 127.0.0.1:55293] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here, referer: http://local.pegs.website/
-[Fri Jul 24 18:02:40.613709 2015] [core:alert] [pid 58344] [client 127.0.0.1:55294] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here
-[Fri Jul 24 18:02:40.964614 2015] [core:alert] [pid 59133] [client 127.0.0.1:55295] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here, referer: http://local.pegs.website/
-[Fri Jul 24 18:03:55.625875 2015] [proxy:warn] [pid 60227] [client 127.0.0.1:55311] AH01144: No protocol handler was valid for the URL /app. If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule., referer: http://local.pegs.website/
-[Fri Jul 24 18:11:22.384441 2015] [proxy:warn] [pid 60241] [client 127.0.0.1:55413] AH01144: No protocol handler was valid for the URL /app/. If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
-[Fri Jul 24 20:57:45.481527 2015] [core:alert] [pid 60420] [client 127.0.0.1:56309] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here
-[Fri Jul 24 20:57:49.859674 2015] [core:alert] [pid 60460] [client 127.0.0.1:56310] /Users/robertstarbuck/Sites/pegs/.htaccess: ProxyPass not allowed here
-[Fri Jul 24 21:00:41.635590 2015] [proxy:warn] [pid 60557] [client 127.0.0.1:56363] AH01144: No protocol handler was valid for the URL /other/. If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
-[Fri Jul 24 21:00:42.911743 2015] [proxy:warn] [pid 60557] [client 127.0.0.1:56365] AH01144: No protocol handler was valid for the URL /other/. If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
-[Sun Jul 26 12:40:12.604362 2015] [proxy:warn] [pid 63989] [client 127.0.0.1:60954] AH01144: No protocol handler was valid for the URL /other/. If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
-[Sun Jul 26 12:45:20.418987 2015] [ssl:error] [pid 64028] [remote 5.79.56.16:443] AH01961: SSL Proxy requested for local.pegs.website:80 but not enabled [Hint: SSLProxyEngine]
-[Sun Jul 26 12:45:20.419173 2015] [proxy:error] [pid 64028] AH00961: HTTPS: failed to enable ssl support for 5.79.56.16:443 (ouinon.cloudant.com)
-[Sun Jul 26 12:45:21.176957 2015] [ssl:error] [pid 64028] [remote 5.79.56.16:443] AH01961: SSL Proxy requested for local.pegs.website:80 but not enabled [Hint: SSLProxyEngine]
-[Sun Jul 26 12:45:21.177110 2015] [proxy:error] [pid 64028] AH00961: HTTPS: failed to enable ssl support for 5.79.56.16:443 (ouinon.cloudant.com)
-[Mon Jul 27 11:01:50.595240 2015] [proxy_http:error] [pid 64928] (54)Connection reset by peer: [client 127.0.0.1:52647] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
-[Mon Jul 27 11:03:00.059928 2015] [proxy_http:error] [pid 64922] (54)Connection reset by peer: [client 127.0.0.1:52675] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
-[Mon Jul 27 12:18:39.786625 2015] [proxy_http:error] [pid 64929] (54)Connection reset by peer: [client 127.0.0.1:54499] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
-[Mon Jul 27 12:20:34.924626 2015] [proxy_http:error] [pid 64925] (54)Connection reset by peer: [client 127.0.0.1:54551] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
-[Mon Jul 27 14:56:57.725219 2015] [proxy:error] [pid 64927] (51)Network is unreachable: AH00957: HTTPS: attempt to connect to 5.79.56.16:443 (ouinon.cloudant.com) failed
-[Mon Jul 27 14:56:57.727042 2015] [proxy:error] [pid 64927] AH00959: ap_proxy_connect_backend disabling worker for (ouinon.cloudant.com) for 60s
-[Mon Jul 27 14:56:57.727095 2015] [proxy_http:error] [pid 64927] [client 127.0.0.1:55661] AH01114: HTTP: failed to make connection to backend: ouinon.cloudant.com, referer: http://local.pegs.website/
-[Mon Jul 27 14:57:21.563471 2015] [proxy_http:error] [pid 64924] (60)Operation timed out: [client 127.0.0.1:55712] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
-[Mon Jul 27 14:57:25.656573 2015] [proxy:error] [pid 64929] (51)Network is unreachable: AH00957: HTTPS: attempt to connect to 5.79.56.16:443 (ouinon.cloudant.com) failed
-[Mon Jul 27 14:57:25.656724 2015] [proxy:error] [pid 64929] AH00959: ap_proxy_connect_backend disabling worker for (ouinon.cloudant.com) for 60s
-[Mon Jul 27 14:57:25.656738 2015] [proxy_http:error] [pid 64929] [client 127.0.0.1:55791] AH01114: HTTP: failed to make connection to backend: ouinon.cloudant.com, referer: http://local.pegs.website/
-[Tue Jul 28 11:14:10.277515 2015] [proxy:error] [pid 64923] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
-[Tue Jul 28 11:14:10.278602 2015] [proxy_http:error] [pid 64923] [client 127.0.0.1:62744] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 15:41:38.309737 2015] [core:alert] [pid 64926] [client 127.0.0.1:52337] /Users/robertstarbuck/Sites/pegs/.htaccess: <LocationMatch not allowed here, referer: http://local.pegs.website/
+[Thu Jul 30 15:41:38.865920 2015] [core:alert] [pid 64924] [client 127.0.0.1:52338] /Users/robertstarbuck/Sites/pegs/.htaccess: <LocationMatch not allowed here, referer: http://local.pegs.website/
+[Thu Jul 30 15:41:39.749905 2015] [core:alert] [pid 80659] [client 127.0.0.1:52339] /Users/robertstarbuck/Sites/pegs/.htaccess: <LocationMatch not allowed here, referer: http://local.pegs.website/
+[Thu Jul 30 15:41:40.248808 2015] [core:alert] [pid 64927] [client 127.0.0.1:52340] /Users/robertstarbuck/Sites/pegs/.htaccess: <LocationMatch not allowed here, referer: http://local.pegs.website/
+[Thu Jul 30 15:41:49.154528 2015] [core:alert] [pid 64928] [client 127.0.0.1:52341] /Users/robertstarbuck/Sites/pegs/.htaccess: <LocationMatch not allowed here, referer: http://local.pegs.website/
+[Thu Jul 30 15:41:49.578293 2015] [core:alert] [pid 64922] [client 127.0.0.1:52343] /Users/robertstarbuck/Sites/pegs/.htaccess: <LocationMatch not allowed here, referer: http://local.pegs.website/
+[Thu Jul 30 15:41:49.920688 2015] [core:alert] [pid 64923] [client 127.0.0.1:52344] /Users/robertstarbuck/Sites/pegs/.htaccess: <LocationMatch not allowed here, referer: http://local.pegs.website/
+[Thu Jul 30 15:41:50.398175 2015] [core:alert] [pid 64925] [client 127.0.0.1:52345] /Users/robertstarbuck/Sites/pegs/.htaccess: <LocationMatch not allowed here, referer: http://local.pegs.website/
+[Thu Jul 30 15:42:04.073378 2015] [core:alert] [pid 64929] [client 127.0.0.1:52346] /Users/robertstarbuck/Sites/pegs/.htaccess: <LocationMatch not allowed here, referer: http://local.pegs.website/
+[Thu Jul 30 15:42:04.523716 2015] [core:alert] [pid 64926] [client 127.0.0.1:52347] /Users/robertstarbuck/Sites/pegs/.htaccess: <LocationMatch not allowed here, referer: http://local.pegs.website/
+[Thu Jul 30 20:02:52.673762 2015] [proxy:error] [pid 81986] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 20:02:52.679812 2015] [proxy_http:error] [pid 81986] [client 127.0.0.1:54822] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 20:47:23.361595 2015] [proxy_http:error] [pid 81983] (20014)Internal error: [client 127.0.0.1:56419] AH01102: error reading status line from remote server local.pegs.website:8090
+[Thu Jul 30 20:47:23.362602 2015] [proxy:error] [pid 81983] [client 127.0.0.1:56419] AH00898: Error reading from remote server returned by /node/auth/refresh
+[Thu Jul 30 20:48:55.127224 2015] [proxy:error] [pid 81987] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 20:48:55.127419 2015] [proxy_http:error] [pid 81987] [client 127.0.0.1:56438] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 20:49:19.392264 2015] [proxy_http:error] [pid 81987] (20014)Internal error: [client 127.0.0.1:56470] AH01102: error reading status line from remote server local.pegs.website:8090
+[Thu Jul 30 20:49:19.392389 2015] [proxy:error] [pid 81987] [client 127.0.0.1:56470] AH00898: Error reading from remote server returned by /node/auth/refresh
+[Thu Jul 30 20:53:40.225761 2015] [proxy_http:error] [pid 81982] (20014)Internal error: [client 127.0.0.1:56542] AH01102: error reading status line from remote server local.pegs.website:8090
+[Thu Jul 30 20:53:40.226049 2015] [proxy:error] [pid 81982] [client 127.0.0.1:56542] AH00898: Error reading from remote server returned by /node/auth/google/refresh
+[Thu Jul 30 20:53:45.047661 2015] [proxy:error] [pid 81982] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 20:53:45.047760 2015] [proxy_http:error] [pid 81982] [client 127.0.0.1:56542] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 20:55:49.450370 2015] [proxy_http:error] [pid 81986] (20014)Internal error: [client 127.0.0.1:56618] AH01102: error reading status line from remote server local.pegs.website:8090
+[Thu Jul 30 20:55:49.450600 2015] [proxy:error] [pid 81986] [client 127.0.0.1:56618] AH00898: Error reading from remote server returned by /node/auth/google/refresh
+[Thu Jul 30 20:57:46.880697 2015] [proxy_http:error] [pid 81985] (20014)Internal error: [client 127.0.0.1:56652] AH01102: error reading status line from remote server local.pegs.website:8090
+[Thu Jul 30 20:57:46.880837 2015] [proxy:error] [pid 81985] [client 127.0.0.1:56652] AH00898: Error reading from remote server returned by /node/auth/google/refresh
+[Thu Jul 30 21:00:02.539015 2015] [proxy:error] [pid 81988] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 21:00:02.539141 2015] [proxy_http:error] [pid 81988] [client 127.0.0.1:56715] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 21:00:03.798833 2015] [proxy:error] [pid 81986] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 21:00:03.798852 2015] [proxy_http:error] [pid 81986] [client 127.0.0.1:56717] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 21:11:33.741708 2015] [proxy:error] [pid 81986] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 21:11:33.747855 2015] [proxy_http:error] [pid 81986] [client 127.0.0.1:57023] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 21:12:32.569396 2015] [proxy:error] [pid 81982] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 21:12:32.574932 2015] [proxy_http:error] [pid 81982] [client 127.0.0.1:57054] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 21:14:40.659187 2015] [proxy:error] [pid 81981] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 21:14:40.665353 2015] [proxy_http:error] [pid 81981] [client 127.0.0.1:57080] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 21:16:45.354225 2015] [proxy:error] [pid 81988] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 21:16:45.360515 2015] [proxy_http:error] [pid 81988] [client 127.0.0.1:57159] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 21:18:13.448527 2015] [proxy:error] [pid 81981] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 21:18:13.448644 2015] [proxy_http:error] [pid 81981] [client 127.0.0.1:57195] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 21:18:42.543229 2015] [proxy:error] [pid 81983] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 21:18:42.548755 2015] [proxy_http:error] [pid 81983] [client 127.0.0.1:57213] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 21:29:47.993348 2015] [proxy:error] [pid 81988] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 21:29:47.993729 2015] [proxy_http:error] [pid 81988] [client 127.0.0.1:57363] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Thu Jul 30 21:29:49.070882 2015] [proxy:error] [pid 81985] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Thu Jul 30 21:29:49.070983 2015] [proxy_http:error] [pid 81985] [client 127.0.0.1:57365] AH01114: HTTP: failed to make connection to backend: local.pegs.website

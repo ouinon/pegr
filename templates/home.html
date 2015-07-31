@@ -1,38 +1,53 @@
-<div class="cte WdC">
-	<div id="omni" class="tbl">
-		<div class="cll">
-			<div class="overlay">
-				<div ng-bind-html="htmlVal"></div>
-			</div>
-			<o-input name="firstinput" ng-model="input0" placeholder="Your Pegs Here…"></o-input>
+<div id="omni" class="tbl">
+	<div class="cll">
+		<div class="overlay">
+			<div ng-bind-html="inputHTML"></div>
 		</div>
+		<o-input name="firstinput" ng-model="inputPeg" placeholder="New Pegs Here…"></o-input>
 	</div>
-	<div id="newboxes" class="o-box">
+</div>
 
-		<button ng-click="savePegs()" class="btn Icn c_B" ng-disabled="!total">
-			<label for="">Peg</label>
-			<div class="icn">
-				<i class="fa fa-chevron-down"></i>
-			</div>
-		</button>
+<div class="o-cte">
+	<div class="cte WdC">
+		<div id="newboxes" class="o-box">
 
-		<div ng-repeat="peg in pegsNew" class="box">
-			<div class="cll" ng-bind="peg.input"></div>
-			<div class="cll" ng-bind="peg.value"></div>
-			<span ng-show="peg.input" >:</span>
+			<div class="o-tbl SpcB topL">
+				<div class="tbl Auto mg0">
+					<div class="cll">
+						<button ng-model="rowlayout" btn-checkbox class="btn Icn c_Clear">
+							<label for="">Row View</label>
+							<div class="icn">
+								<i class="fa fs2r fa-square-o"></i>
+								<i class="fa fs2r fa-check-square"></i>
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<button ng-click="savePegs()" class="btn Icn c_B topR" ng-disabled="!pegsNew.length">
+				<label for="">Peg</label>
+				<div class="icn">
+					<i class="fa fa-chevron-down"></i>
+				</div>
+			</button>
+
+			<div class="o-box Newpegs">
+				<div ng-show="peg.val" ng-repeat="peg in pegsNew" class="box">
+					<div class="cll"><span class="o-bubble"><em ng-bind="peg.val"></em></span></div>
+					<div class="cll"><span ng-bind="peg.input"></span></div>
+					<span class="center" ng-show="peg.input" >:</span>
+					<span class="center Error" ng-bind="peg.error"></span>
+				</div>
+			</div>			
 		</div>
-	</div>
-	<div class="tbl Center- Auto">
-		<div class="cll">
-			
-		</div>
-	</div>
-	<h1 ng-bind="error"></h1>
-	<div class="o-box SpcA m_Wd50A m_Wd33B m_Wd25C Wd20">
-		<div ng-repeat="key in getKeys(pegs)" class="box">
-			<div class="cll" ng-bind="key"></div>
-			<div class="cll" ng-bind="pegs[key][0]"></div>
-			<span ng-show="peg.input" >:</span>
+		<h1 ng-bind="error"></h1>
+		<div class="o-box Saved SpcA m_Wd50A m_Wd33B m_Wd25C Wd20" ng-class="{'Row':rowlayout}">
+			<div ng-repeat="key in getKeys(pegs)" class="box">
+				<div class="cll"><span class="o-bubble"><em ng-bind="key"></em></span></div>
+				<div class="cll"><span ng-bind="pegs[key][0]"></span></div>
+				<span class="center">:</span>
+			</div>
 		</div>
 	</div>
 </div>

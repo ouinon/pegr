@@ -6,7 +6,7 @@ var express = require('express')
 , util = require('util')
 , Cloudant = require('Cloudant')
 , GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
-
+// Load Environment Variables
 env(__dirname + '/../.env');
 
 var cloudant = Cloudant({
@@ -48,9 +48,9 @@ passport.deserializeUser(function(obj, done) {
 //   credentials (in this case, an accessToken, refreshToken, and Google
 //   profile), and invoke a callback with a user object.
 passport.use(new GoogleStrategy({
-    clientID: process.env.GOOGLE_CLIENT_ID,
-    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://local.pegs.website/node/auth/google/callback"
+        clientID: process.env.GOOGLE_CLIENT_ID,
+        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+        callbackURL: "http://local.pegs.website/node/auth/google/callback"
     },
     function(accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
@@ -74,9 +74,6 @@ app.set('view engine', 'ejs');
 app.use(cookieParser());
 
 app.use(sessions({
-    genid: function(req) {
-return 'ec666030-7f8f-11e3-ae96-0123456789ab'; // use UUIDs for session IDs
-},
 secret: 'keyboard cat', 
 saveUninitialized: true,
 resave: true
@@ -114,10 +111,34 @@ app.get('/node', function(req, res){
 //   res.render('login', { user: req.user });
 // });
 app.get('/auth/google',
-    passport.authenticate('google',{ scope: ['https://www.googleapis.com/auth/userinfo.email'] }),
-    function(req, res){
-    // The request will be redirected to Google for authentication, so this
-    // function will not be called.
+    passport.authenticate('google',{ scope: ['https://www.googleapis.com/auth/userinfo.email'] })
+);
+
+// #RES We do this to acquire a new cookie should our other expire
+// The '/google/callback/' is a requirement in the URL to ensure that we avoid:
+// "The proxy server received an invalid response from an upstream server"
+app.get('/auth/google/callback/refresh',
+    function(req, res) {
+
+        console.log("isAuthenticated",req.isAuthenticated());
+
+        cloudant.auth(process.env.CLOUDANT_KEY, process.env.CLOUDANT_PW, function(err, body, headers) {
+          // if (err)
+
+            var cookieAr = headers['set-cookie'][0].replace(/[ \w-]+=/g,'').split(';');
+
+            // res.cookie('AuthSession', headers['set-cookie'], { httpOnly: false });
+            console.log("success refresh",err,body,headers);
+
+            // res.cookie('UserId',req.user.id,{httpOnly:false});
+            // res.cookie('Name',req.user.displayName,{httpOnly:false});
+            // res.clearCookie('AuthSession');
+            res.cookie('AuthSession',cookieAr[0],{httpOnly:true,overwrite:true});
+
+            res.send('hello world');
+
+        });
+
     }
 );
 
@@ -138,23 +159,18 @@ app.get('/auth/google/callback',
             var cookieAr = headers['set-cookie'][0].replace(/[ \w-]+=/g,'').split(';');
 
             // res.cookie('AuthSession', headers['set-cookie'], { httpOnly: false });
-            console.log("req.user",req.user);
+            // console.log("req.user",req.user);
 
             // displayName: 'Rob Starbuck',
             // name: { familyName: 'Starbuck', givenName: 'Rob' }
             // You need to set the Authsession, nothing else. This appears to have worked, we'll see.
+            console.log('set cookie original');
             res.cookie('UserId',req.user.id,{httpOnly:false});
             res.cookie('Name',req.user.displayName,{httpOnly:false});
             res.cookie('AuthSession',cookieAr[0],{httpOnly:true});
-            // res.cookie('AuthSession', 'bWlsdXRoZXJlc3BlcmVkZXJlbGljaGF6OjU1QjREQ0U0OuFWO2QINdFcu2exFztLqRMCjy2G', { httpOnly: false });
-            
-            // res.cookie('AuthSession', headers['set-cookie'], { httpOnly: false });
 
             res.redirect('/');
-            // res.cookie('sessionid', '1', { httpOnly: true });
-            // console.log(headers['set-cookie']);
-            // Store the authentication cookie for later.
-            // cookies[username] = headers['set-cookie'];
+
         });
 
     }

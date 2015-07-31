@@ -1,15 +1,25 @@
 angular.module('pegsApp').controller('HomeCtrl',
-	['pegValues','$scope','$cookies','$http','$resource','$sce',function(pegValues,$scope,$cookies,$http,$resource,$sce) {
+	['pegValues','$scope','$cookies','$http','$resource','$sce','$window',function(pegValues,$scope,$cookies,$http,$resource,$sce,$window) {
 
-	$scope.getKeys = function(){
-		return Object.keys($scope.pegs);
+	// private functions
+
+	var resultToHTML = function(Arr){
+		return Arr.map(function(item){
+			if(!item){
+				return '<span><span></span></span>';
+			}
+			return '<span class="value"><span class="square"><span class="int">'+item+'</span></span></span>';
+		}).join('');
 	};
 
 	var convert = function(string){
+
 		var result = {
 			val:'',
+			input:string.toLowerCase(),
 			cols:[]
 		};
+
 		var resultToObj = function(string){
 			var letter = string[0];
 			var str = pegValues[letter] ? pegValues[letter] : '';
@@ -22,6 +32,14 @@ angular.module('pegsApp').controller('HomeCtrl',
 			result.cols.push(str);
 			// If it's the last letter return the string itself.
 			if(!newletter){
+
+				if(!result.val.length){
+					result.error = 'String is not a peg';
+				}
+				else if(!parseInt(result.val[0])){
+					result.error = '0 Padding is not allowed';
+				}
+
 				return result;
 			}
 			return resultToObj(newletter);
@@ -29,111 +47,131 @@ angular.module('pegsApp').controller('HomeCtrl',
 		return resultToObj(string);
 	};
 
-	var resultToHTML = function(Arr){
-		return Arr.map(function(item){
-			if(!item){
-				return '<span><span></span></span>';
-			}
-			return '<span class="value"><span class="square"><span class="int">'+item+'</span></span></span>';
-		});
-	};
+	// $scope functions
 
-	$scope.pegsNew = [];
-
-	$scope.$watch('input0',function(input){
-
-		var htmlResultAr;
+	$scope.$watch('inputPeg',function(input){
+		var pegsAr = [];
+		var inputAr = [];
+		var colsAr = [];
 		var html = '';
-		var result = [];
-		var total = 0;
-		var resultOb = input ? convert(input.toLowerCase()) : null;
+		var delimitRg = /[^\dA-Za-z-]+/g;
+		var delimitSingleRg = /[^\dA-Za-z-]{1}/;
+		// Regex is slightly different in this instacence to catch only the first character
+		var delimitMatches;
+		var delimit = input ? input.match(delimitSingleRg) : '';
 
-		if(resultOb){
+		if(delimit){
+			inputAr = input.replace(delimitRg,delimit[0]).split(delimit[0]);
+			delimitMatches = input.match(delimitRg);
+		}else{
+			inputAr = [input];
+		}
+		if(input){
+			var added = [];
+			inputAr.map(function(inputval,index){
 
-			htmlResultAr = resultToHTML(resultOb.cols);
-			html = $sce.trustAsHtml(htmlResultAr.join(''));
+				var result = convert(inputval.toLowerCase());
+				colsAr = colsAr.concat(result.cols);
 
-			result = [{
-				"input":input,
-				"value":resultOb.val
-			}];
-			
-			total = resultOb.val;
+				if(added.indexOf(result.input) === -1){
+					pegsAr.push(result);
+					added.push(result.input);
+				}
 
-			if(!parseInt(resultOb.val[0]) && resultOb.val.length > 1){
-				result.error = '0 Paddding is not allowed';
+				if(delimitMatches && delimitMatches[index]){
+					var delimitConcat = delimitMatches[index].replace(/.{1}/g,' ').split(' ');
+					// Remove the last element, it's always one longer than it needs to be.
+					delimitConcat.pop();
+					// Ensure that spaces on the end of the string don't add extra elements
+					// #FAIRE - There must be an easier way to write this.
+					if(delimitMatches.length===++index && input.substr(-1).match(delimitSingleRg)){
+						delimitConcat.pop();
+					};
+					colsAr = colsAr.concat(delimitConcat);
+				}
+
+			});
+			if(input.length < 50){
+				html = $sce.trustAsHtml(resultToHTML(colsAr));
 			}
-
 		}
 
-		$scope.htmlVal = html;
-		$scope.total = total;
-		$scope.pegsNew = result;
+		$scope.inputHTML = html;
+		$scope.pegsNew = pegsAr;
 
 	});
 
+	$scope.getKeys = function(){
+		return Object.keys($scope.pegs);
+	};
+
 	$scope.savePegs = function(){
 
-		// console.log(userId,$cookies.getAll());
+		var added = [];
 
 		$scope.pegsNew.forEach(function(peg){
 
-			console.log('user',user);
+			var pegAr = $scope.pegs[peg.val];
 
-			var pegAr = $scope.pegs[peg.value];
-
-			console.log(pegAr);
 			if(pegAr){
 				console.log(peg.input,pegAr.indexOf(peg.input));
 			}
 
-
-			if(!peg.error){				
+			if(!peg.error){
 				if(!pegAr){
-					$scope.pegs[peg.value] = [peg.input];	
+					$scope.pegs[peg.val] = [peg.input];	
 				}else if(pegAr.indexOf(peg.input) === -1){
-					$scope.pegs[peg.value].unshift(peg.input);
+					$scope.pegs[peg.val].unshift(peg.input);
 				}
 			}
 
-			user.pegs = $scope.pegs;
+		});
 
-			user.$update(function(res){
-				user._rev = res.rev;
-				// user._id = res.id;
-				// console.log(res);
-			});
+		user.pegs = $scope.pegs;
 
+		user.$update(function(res){
+			user._rev = res.rev;
 		});
 
 	};
 
-	var userId;
+	$scope.pegs = {};
+	$scope.pegsNew = [];
+	$scope.rowlayout = false;
+	$scope.inputHTML;
+	$scope.userId;
+
+	var user;
 	var Res = $resource('http://local.pegs.website/other/:id',{'id':'@id'},{
 		update: {
 			method: 'PUT'
 		}
 	});
-	var user;
-	$scope.pegs = {};
 
 	(function init(id,name){
-		userId = id;
-		if(userId){
-			Res.get({id:userId},
+		if(id){
+			$scope.userId = id;
+			Res.get({id:$scope.userId},
 				function(result){
+
 					user = result;
-					console.log(user);
 					$scope.pegs = user.pegs;
+
 				},
 				function(result){
-					// console.log('here');
-					user = new Res({'_id':userId});
+
+					user = new Res({'_id':$scope.userId});
 					user.pegs = {};
 					user.username = name;
+
 					user.$save(function(res){
 						user._rev = res.rev;
+					},function(error){
+						if(error.status && error.status === 401){
+							$window.location.href = 'http://local.pegs.website/node/auth/google/';
+						}
 					});
+
 				}
 			);
 		}
