@@ -24,3 +24,23 @@
 		}
 	}
 }
+
+// Animation
+
+@-moz-keyframes blinker {  
+    0% { fill: rgba(98,152,182,1); }
+    50% { fill: rgba(98,152,182,0); }
+    100% { fill: rgba(98,152,182,1); }
+}
+
+@-webkit-keyframes blinker {  
+    0% { fill: rgba(98,152,182,1); }
+    50% { fill: rgba(98,152,182,0); }
+    100% { fill: rgba(98,152,182,1); }
+}
+
+@keyframes blinker {  
+    0% { fill: rgba(98,152,182,1); }
+    50% { fill: rgba(98,152,182,0); }
+    100% { fill: rgba(98,152,182,1); }
+}

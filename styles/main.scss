@@ -1,7 +1,7 @@
 @import 'stablegrid';
-
+$newPeg:$c_C;
 body{
-	padding:4rem 0;
+	padding:2rem 0 5rem;
 	font-family:'Anonymous Pro';
 	font-weight:700;
 	font-size:2rem;
@@ -47,7 +47,7 @@ body{
 		}
 		margin-bottom: 6rem;
 	}
-	&.Saved{
+	&.Data{
 		em{
 			background-color: black;
 		}
@@ -131,7 +131,7 @@ body{
 	height: 2rem;
 	width: 2rem;
 	left:50%;
-	background-color:red;
+	background-color:$newPeg;
 	margin-left:-1rem;
 	text-align:center;
 	.int{
@@ -149,7 +149,7 @@ body{
 			position: relative;
 			opacity:0;
 			&:after{
-				color:red;
+				color:$newPeg;
 				content:'_';
 				text-align:center;
 			}
@@ -172,7 +172,7 @@ body{
 	display: table-cell;
 	// vertical-align:middle;
 	em{
-		background-color: red;
+		background-color: $newPeg;
 		padding:0.4rem;
 		padding-left:0.6rem;
 		border-radius: 0.5rem;
@@ -184,6 +184,20 @@ body{
 	left:50%;
 	margin-left:-25px;
 	top:3rem;
+	.logo-bg{
+		fill:transparent;
+	}
+	&.ValidPeg{
+		.logo-bg{
+			animation-name: blinker;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+	}
+	.logo-fg{
+		fill:#FDFCF6;	
+	}
 }
 
 @media only screen and (max-width : $wdC) {
@@ -192,4 +206,34 @@ body{
 		padding-top: 6rem;
 	}
 }
+}
+footer{
+	.btn,p{	
+		font-size: 1.5rem !important;
+		color:$DK3;
+	}
+	label{
+		overflow: visible !important;
+	}
+	p{
+		position: absolute;
+		bottom:0;
+		left:0;
+		margin:0;
+	}
+	svg{
+		position: absolute;
+		bottom: 0;
+		right:0;
+		fill:$DK3;
+	}
+	.tbl{
+		margin:3rem 0 0;
+	}
+	.cte{
+		min-height: 16rem;
+	}
+	a{
+		padding-right:4rem !important;
+	}
 }

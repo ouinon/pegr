@@ -1,9 +1,35 @@
+<header>
+	<div class="o-cte">
+		<div class="cte WdC">
+			<a ng-hide="userName" href="http://local.pegs.website/node/auth/google" rel="nofollow" target="_self" id="google" class="btn Lft- Icn c_B topR">
+				<label for="">Sign in</label>
+				<div class="icn">
+					<i class="fa fa-google fs2r"></i>
+				</div>
+			</a>
+			<div ng-click="logout()" ng-show="userName" rel="nofollow" class="btn c_Clear topL">
+				<label ng-bind="userName"></label>
+			</div>
+			<button ng-click="logout()" ng-show="userName" rel="nofollow" class="btn Icn c_Clear topR">
+				<label>Sign-Out</label>
+				<div class="icn">
+					<i class="fa fa-sign-out fs2r"></i>
+				</div>
+			</button>
+		</div>
+	</div>
+	<svg version="1.1" id="logo" ng-class="{'ValidPeg':validPeg}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="102.04px" viewBox="0 0 50 102.04" enable-background="new 0 0 50 102.04" xml:space="preserve">
+		<g class="logo-bg"><path d="M25.001,0C11.215,0,0,11.215,0,25v7.66v4.098v3.582v15.319v14.295V88.54v13.5h13.501c4.19,0,8.122-1.137,11.5-3.119c3.377,1.982,7.308,3.119,11.498,3.119H50v-13.5V69.954V55.659V40.34v-3.582V32.66V25C50,11.215,38.785,0,25.001,0L25.001,0z"/></g>
+		<g class="logo-fg"><path d="M25.001,13.5c6.351,0,11.498,5.148,11.498,11.5v7.66c-1.015,1.518-2.32,2.825-3.839,3.84c1.519,1.014,2.824,2.321,3.839,3.839v15.319v14.295V88.54c-5.132,0-9.292-4.162-9.292-9.293V51.019h-4.414v28.228c0,5.131-4.161,9.293-9.292,9.293V69.954V55.659V40.34c1.015-1.518,2.322-2.825,3.84-3.839c-1.518-1.016-2.825-2.322-3.84-3.84V25C13.501,18.649,18.649,13.5,25.001,13.5"/></g>
+	</svg>
+</header>
+
 <div id="omni" class="tbl">
 	<div class="cll">
 		<div class="overlay">
 			<div ng-bind-html="inputHTML"></div>
 		</div>
-		<o-input name="firstinput" ng-model="inputPeg" placeholder="New Pegs Here…"></o-input>
+		<o-input name="search" ng-model="inputPeg" ouinon-placeholder="placeHolder"></o-input>
 	</div>
 </div>
 
@@ -25,10 +51,10 @@
 				</div>
 			</div>
 
-			<button ng-click="savePegs()" class="btn Icn c_B topR" ng-disabled="!pegsNew.length">
-				<label for="">Peg</label>
+			<button ng-click="savePegs()" class="btn Icn c_B topR" ng-disabled="!validPeg">
+				<label for="" class="clLgt">Peg</label>
 				<div class="icn">
-					<i class="fa fa-chevron-down"></i>
+					<svg class="mgL1r" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1.5rem" height="6rem" viewBox="0 0 50 102.04" enable-background="new 0 0 50 102.04" xml:space="preserve"><g><path fill="#FDFCF6" d="M25.001,13.5c6.351,0,11.498,5.148,11.498,11.5v7.66c-1.015,1.518-2.32,2.825-3.839,3.84c1.519,1.014,2.824,2.321,3.839,3.839v15.319v14.295V88.54c-5.132,0-9.292-4.162-9.292-9.293V51.019h-4.414v28.228c0,5.131-4.161,9.293-9.292,9.293V69.954V55.659V40.34c1.015-1.518,2.322-2.825,3.84-3.839c-1.518-1.016-2.825-2.322-3.84-3.84V25C13.501,18.649,18.649,13.5,25.001,13.5"/></g></svg>
 				</div>
 			</button>
 
@@ -42,7 +68,7 @@
 			</div>			
 		</div>
 		<h1 ng-bind="error"></h1>
-		<div class="o-box Saved SpcA m_Wd50A m_Wd33B m_Wd25C Wd20" ng-class="{'Row':rowlayout}">
+		<div class="o-box SpcA m_Wd50A m_Wd33B m_Wd25C Wd20" ng-class="{'Row':rowlayout,'Data':userName}">
 			<div ng-repeat="key in getKeys(pegs)" class="box">
 				<div class="cll"><span class="o-bubble"><em ng-bind="key"></em></span></div>
 				<div class="cll"><span ng-bind="pegs[key][0]"></span></div>

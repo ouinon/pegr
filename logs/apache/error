@@ -44,3 +44,12 @@
 [Thu Jul 30 21:29:47.993729 2015] [proxy_http:error] [pid 81988] [client 127.0.0.1:57363] AH01114: HTTP: failed to make connection to backend: local.pegs.website
 [Thu Jul 30 21:29:49.070882 2015] [proxy:error] [pid 81985] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
 [Thu Jul 30 21:29:49.070983 2015] [proxy_http:error] [pid 81985] [client 127.0.0.1:57365] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Fri Jul 31 10:55:16.476249 2015] [proxy:error] [pid 81988] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Fri Jul 31 10:55:16.476408 2015] [proxy_http:error] [pid 81988] [client 127.0.0.1:59941] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Fri Jul 31 10:55:17.712737 2015] [proxy:error] [pid 81983] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Fri Jul 31 10:55:17.712852 2015] [proxy_http:error] [pid 81983] [client 127.0.0.1:59942] AH01114: HTTP: failed to make connection to backend: local.pegs.website
+[Fri Jul 31 14:46:19.604792 2015] [proxy_http:error] [pid 81986] (60)Operation timed out: [client 127.0.0.1:63136] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
+[Fri Jul 31 14:46:37.603621 2015] [proxy_http:error] [pid 81985] (60)Operation timed out: [client 127.0.0.1:63146] AH01102: error reading status line from remote server ouinon.cloudant.com:443, referer: http://local.pegs.website/
+[Fri Jul 31 14:46:37.603744 2015] [proxy:error] [pid 81985] [client 127.0.0.1:63146] AH00898: Error reading from remote server returned by /other/114903747335827259197, referer: http://local.pegs.website/
+[Mon Aug 03 11:31:54.470322 2015] [proxy:error] [pid 81985] (61)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8090 (*) failed
+[Mon Aug 03 11:31:54.470365 2015] [proxy_http:error] [pid 81985] [client 127.0.0.1:54889] AH01114: HTTP: failed to make connection to backend: local.pegs.website, referer: http://local.pegs.website/

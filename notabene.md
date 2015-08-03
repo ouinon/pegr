@@ -1,1 +1,2 @@
 - If a cookie is HTTP only, it can't be read by JavaScript.
+- You can use: __osascript -e 'tell application "Terminal" to do script "echo hello"'__, to launch a script in a new window.

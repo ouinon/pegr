@@ -1,7 +1,14 @@
 angular.module('pegsApp').controller('HomeCtrl',
-	['pegValues','$scope','$cookies','$http','$resource','$sce','$window',function(pegValues,$scope,$cookies,$http,$resource,$sce,$window) {
+	['pegValues','$scope','$cookies','$http','$resource','$sce','$window','$timeout',function(pegValues,$scope,$cookies,$http,$resource,$sce,$window,$timeout) {
 
 	// private functions
+
+	var placeHolderFlash = function(message){
+		$scope.placeHolder = message;
+		$timeout(function(){
+			$scope.placeHolder = placeholderDefault;
+		},2000);
+	}
 
 	var resultToHTML = function(Arr){
 		return Arr.map(function(item){
@@ -71,6 +78,9 @@ angular.module('pegsApp').controller('HomeCtrl',
 			inputAr.map(function(inputval,index){
 
 				var result = convert(inputval.toLowerCase());
+				
+				$scope.validPeg = (result.val && !result.error);
+
 				colsAr = colsAr.concat(result.cols);
 
 				if(added.indexOf(result.input) === -1){
@@ -94,6 +104,8 @@ angular.module('pegsApp').controller('HomeCtrl',
 			if(input.length < 50){
 				html = $sce.trustAsHtml(resultToHTML(colsAr));
 			}
+		}else{
+			$scope.validPeg = false;
 		}
 
 		$scope.inputHTML = html;
@@ -105,33 +117,88 @@ angular.module('pegsApp').controller('HomeCtrl',
 		return Object.keys($scope.pegs);
 	};
 
+	$scope.logout = function(){
+		// /auth/google/logout
+
+		$http.get('/node/auth/google/logout').success(function(data,status){
+			placeHolderFlash('You are logged out.');
+			$scope.userId = undefined;
+			$scope.userName = undefined;
+		});
+	};
+
 	$scope.savePegs = function(){
 
 		var added = [];
+		var intNew = 0;
+		var intUpdate = 0;
+		var intExist = 0;
+
 
 		$scope.pegsNew.forEach(function(peg){
 
-			var pegAr = $scope.pegs[peg.val];
-
-			if(pegAr){
-				console.log(peg.input,pegAr.indexOf(peg.input));
-			}
-
 			if(!peg.error){
-				if(!pegAr){
+				// If it doesn't yet exist
+				if(!$scope.pegs[peg.val]){
+					intNew++;
 					$scope.pegs[peg.val] = [peg.input];	
-				}else if(pegAr.indexOf(peg.input) === -1){
+				// If it isn't in the array
+				}else if($scope.pegs[peg.val].indexOf(peg.input) === -1){
+					intNew++;
 					$scope.pegs[peg.val].unshift(peg.input);
+				// If it is in the array but isn't the first element
+				}else if($scope.pegs[peg.val][0] !== peg.input){
+					intUpdate++;
+					delete $scope.pegs[peg.val][$scope.pegs[peg.val].indexOf(peg.input)];
+					$scope.pegs[peg.val].unshift(peg.input);
+				// If it is in the array and is the first element
+				}else{
+					intExist++;
 				}
+
 			}
 
 		});
 
-		user.pegs = $scope.pegs;
 
-		user.$update(function(res){
-			user._rev = res.rev;
-		});
+		if($scope.userId){
+
+			if(intNew || intUpdate){
+
+				user.pegs = $scope.pegs;
+				var sArr = ['','s'];
+				var msgArr = [];
+
+				if(intNew){
+					msgArr.push(intNew+' Peg'+sArr[Number(Boolean(intNew-1))]+' Added');
+				}
+				if(intExist){
+					msgArr.push(intExist+' Peg'+sArr[Number(Boolean(intExist-1))]+' Exist');
+				}
+				if(intUpdate){
+					msgArr.push(intUpdate+' Peg'+sArr[Number(Boolean(intUpdate-1))]+' Updated');
+				}
+
+				user.id = $scope.userId;
+				user.$update(function(res){
+
+					placeHolderFlash(msgArr.join(', '));
+					$scope.inputPeg = '';
+					user._rev = res.rev;
+
+				});
+
+			}else{
+				$scope.inputPeg = '';
+				placeHolderFlash('No pegs to add');
+			}
+
+		}else{
+		
+			$scope.inputPeg = '';
+			placeHolderFlash('Sign-in to save Pegs!');
+
+		}
 
 	};
 
@@ -140,41 +207,46 @@ angular.module('pegsApp').controller('HomeCtrl',
 	$scope.rowlayout = false;
 	$scope.inputHTML;
 	$scope.userId;
+	$scope.userName;
+	$scope.placeHolder = 'New Pegs Here…';
 
 	var user;
+	var placeholderDefault = $scope.placeHolder;
 	var Res = $resource('http://local.pegs.website/other/:id',{'id':'@id'},{
 		update: {
 			method: 'PUT'
 		}
 	});
+	$http.get('/node/auth/google/callback/verify').success(function(data,status){
+		if(data.LoggedIn && data.LoggedIn === true){
+			if(data.UserId){
 
-	(function init(id,name){
-		if(id){
-			$scope.userId = id;
-			Res.get({id:$scope.userId},
-				function(result){
+				$scope.userId = data.UserId;
+				$scope.userName = data.Name;
 
-					user = result;
-					$scope.pegs = user.pegs;
+				console.log($scope.userName);
 
-				},
-				function(result){
+				Res.get({id:$scope.userId},
+					function(result){
 
-					user = new Res({'_id':$scope.userId});
-					user.pegs = {};
-					user.username = name;
+						user = result;
+						$scope.pegs = user.pegs;
 
-					user.$save(function(res){
-						user._rev = res.rev;
-					},function(error){
-						if(error.status && error.status === 401){
-							$window.location.href = 'http://local.pegs.website/node/auth/google/';
-						}
-					});
+					},
+					function(result){
 
-				}
-			);
-		}
-	})($cookies.get('UserId'),$cookies.get('Name'));
+						user = new Res({'_id':$scope.userId});
+						user.pegs = {};
+						user.username = $scope.userName;
+
+						user.$save(function(res){
+							user._rev = res.rev;
+						});
+
+					}
+				);
+			}
+		};
+	});
 
 }]);
