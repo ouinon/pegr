@@ -1,0 +1,500 @@
+  142  node app.js 8090
+  143  node app.js 8090
+  144  node app.js 8090
+  145  node app.js 8090
+  146  node app.js 8090
+  147  node app.js 8090
+  148  node app.js 8090
+  149  node app.js 8090
+  150  node app.js 8090
+  151  node app.js 8090
+  152  node app.js 8090
+  153  node app.js 8090
+  154  node app.js 8090
+  155  node app.js 8090
+  156  node app.js 8090
+  157  node app.js 8090
+  158  node app.js 8090
+  159  node app.js 8090
+  160  node app.js 8090
+  161  node app.js 8090
+  162  node app.js 8090
+  163  node app.js 8090
+  164  git status
+  165  git add .
+  166  git -m commit 'Authenticated with cloudant'
+  167  git commit -m 'Authenticated with cloudant'
+  168  git status -v
+  169  ll
+  170  git status
+  171  cd ../
+  172  ll
+  173  subl .gitignore
+  174  git status
+  175  git add .gitignore 
+  176  git status
+  177  git add .
+  178  ll
+  179  git status
+  180  git status --ignored
+  181  node app.js 8090
+  182  cd node/
+  183  node app.js 8090
+  184  node app.js 8090
+  185  git add app.js 
+  186  git commit -m 'Changed the syntax a little for Cloudant'
+  187  git commit -m 'Changed the syntax a little for Cloudant'
+  188  node app.js 8090
+  189  node app.js 8090
+  190  node app.js 8090
+  191  node app.js 8090
+  192  node app.js 8090
+  193  node app.js 8090
+  194  node app.js 8090
+  195  node app.js 8090
+  196  node app.js 8090
+  197  export DEBUG=cloudant,nano
+  198  node app.js 8090
+  199  node app.js 8090
+  200  node app.js 8090
+  201  node app.js 8090
+  202  $ npm install cookie-parser
+  203  npm install cookie-parser
+  204  node app.js 8090
+  205  node app.js 8090
+  206  node app.js 8090
+  207  node app.js 8090
+  208  node app.js 8090
+  209  node app.js 8090
+  210  export DEBUG=
+  211  node app.js 8090
+  212  clear
+  213  clear
+  214  node app.js 8090
+  215  node app.js 8090
+  216  node app.js 8090
+  217  node app.js 8090
+  218  node app.js 8090
+  219  node app.js 8090
+  220  node app.js 8090
+  221  node app.js 8090
+  222  node app.js 8090
+  223  node app.js 8090
+  224  node app.js 8090
+  225  node app.js 8090
+  226  node app.js 8090
+  227  node app.js 8090
+  228  node app.js 8090
+  229  node app.js 8090
+  230  node app.js 8090
+  231  node app.js 8090
+  232  node app.js 8090
+  233  node app.js 8090
+  234  node app.js 8090
+  235  node app.js 8090
+  236  ll
+  237  httpd
+  238  httpd -v
+  239  apachectl restart
+  240  sudo apachectl restart
+  241  sudo apachectl restart
+  242  sudo apachectl restart
+  243  node app.js 8090
+  244  node app.js 8090
+  245  node app.js 8090
+  246  node app.js 8090
+  247  node app.js 8090
+  248  node app.js 8090
+  249  node app.js 8090
+  250  node app.js 8090
+  251  node app.js 8090
+  252  ll
+  253  cd ../
+  254  ll
+  255  git status
+  256  git add .
+  257  git commit -m 'Seem now to have cookies correctly authenticating'
+  258  git remote -v
+  259  git remote
+  260  git brach
+  261  git status
+  262  git remote
+  263  git push pegs master
+  264  git push pegs master
+  265  apachectl restart
+  266  sudo apachectl restart
+  267  ll
+  268  pwd
+  269  git status
+  270  git diff httpd-pegs.conf 
+  271  ll
+  272  git ignore ignore/
+  273  git status
+  274  git remove ignore/
+  275  ll
+  276  git rm ignore/
+  277  git rm -r ignore/
+  278  subl .gitignore 
+  279  git status
+  280  git add .
+  281  git diff httpd-pegs.conf 
+  282  git diff httpd-pegs.conf 
+  283  git status
+  284  git diff tasks.md 
+  285  gitk httpd-pegs.conf 
+  286  git log --follow -p httpd-pegs.conf 
+  287  git commit -m 'Removed files from git commit'
+  288  git push pegs master
+  289  ll
+  290  takana .
+  291  takana .
+  292  takana .
+  293  pwd
+  294  git add .
+  295  git commit -m 'Mostly cosmetic changes, the site is now looking much more ready for publication.'
+  296  git remote
+  297  git push pegs master
+  298  node -v
+  299  alias
+  300  ssh_c
+  301  ssh_c
+  302  ll
+  303  cd /Users/robertstarbuck/Desktop/stutenders 
+  304  ll
+  305  py_http 
+  306  py_http 
+  307  alias
+  308  python -m SimpleHTTPServe 8080
+  309  python -m SimpleHTTPServer 8080
+  310  python -m SimpleHTTPServer 8080
+  311  ll
+  312  cd_sites 
+  313  ll
+  314  cd pegs/
+  315  ll
+  316  takana .
+  317  ll
+  318  cd_sites 
+  319  ll
+  320  git stutenders/
+  321  ll
+  322  cd stutenders/
+  323  ll
+  324  ll
+  325  git init
+  326  git add .
+  327  git commit -m 'First commit, transitional hosting for a friend.'
+  328  git remote add gh-pages https://github.com/ouinon/stutenders.git
+  329  git push -u gh-pages master
+  330  git remote
+  331  git branch gh-pages
+  332  git status
+  333  git checkout gh-pages
+  334  git push gh-pages gh-pages
+  335  git branch -d master
+  336  git push gh-pages gh-pages
+  337  git push gh-pages master
+  338  git push gh-pages master
+  339  git push gh-pages
+  340  git remote rename gh-pages github
+  341  git status
+  342  git remote
+  343  ll
+  344  subl CNAME
+  345  git add .
+  346  git push github gh-pages
+  347  git pull github
+  348  git pull github
+  349  git pull github gh-pages
+  350  git push github gh-pages
+  351  ll
+  352  git status
+  353  git add .
+  354  git status
+  355  git push github gh-pages
+  356  git commit -m 'Added a CNAME for the stutenders.com domain'
+  357  git push github gh-pages
+  358  git add .
+  359  git commit -m 'Localised CSS files'
+  360  git push github gh-pages
+  361  git pull github gh-pages
+  362  git pull github gh-pages
+  363  git commit -m 'Localised CSS files'
+  364  git push github gh-pages
+  365  git pull github gh-pages
+  366  git add .
+  367  git commit -m 'Added images to static'
+  368  git push github gh-pages
+  369  git add .
+  370  git commit -m 'Changes made to CSS files to point to the correct images'
+  371  git push github gh-pages
+  372  git add .
+  373  git commit -m 'Correction to url for static images'
+  374  git push github gh-pages
+  375  ll
+  376  cd /Users/robertstarbuck/Sites/github/server-maintenance 
+  377  py_http 
+  378  alias
+  379  python -m SimpleHTTPServer 8090
+  380  ll
+  381  git init
+  382  git add .
+  383  git commit -m 'Only commit, hopefully'
+  384  git remote add github https://github.com/ouinon/server-maintenance-employboy.git
+  385  git branch gh-pages
+  386  git checkout gh-pages
+  387  git push github gh-pages
+  388  subl CNAME
+  389  git add .
+  390  git commit -m 'CNAME added'
+  391  git push github gh-pages
+  392  ll
+  393  cd ../
+  394  ll
+  395  cd server-maintenance/
+  396  ll
+  397  cd ../
+  398  ll
+  399  cd server-maintenance/
+  400  cd ../
+  401  ll
+  402  git clone server-maintenance-ouinon https://github.com/ouinon/server-maintenance-employboy.git
+  403  mkdir server-maintenance-ouinon https://github.com/ouinon/server-maintenance-employboy.git
+  404  mkdir server-maintenance-ouinon 
+  405  git clone server-maintenance-ouinon/ https://github.com/ouinon/server-maintenance-employboy.git
+  406  ll
+  407  rm server-maintenance-ouinon/
+  408  rm -f server-maintenance-ouinon/
+  409  rm -rf server-maintenance-ouinon/
+  410  git clone https://github.com/ouinon/server-maintenance-employboy.git server-maintenance-ouinon
+  411  ll
+  412  cd server-maintenance-ouinon/
+  413  ll
+  414  subl CNAME 
+  415  git remote 
+  416  git remote rm origin
+  417  git remote
+  418  git remote add github https://github.com/ouinon/server-maintenance-ouinon.git
+  419  git remote
+  420  git branch gh-pages
+  421  git push github gh-pages
+  422  git status
+  423  git add CNAME
+  424  git status
+  425  git commit -m 'Changed CNAME to "ouinon"'
+  426  git push github gh-pages
+  427  ll
+  428  cd ../
+  429  git clone https://github.com/ouinon/server-maintenance-ouinon.git server-maintenance-webcv
+  430  cd server-maintenance-webcv/
+  431  ll
+  432  subl CNAME 
+  433  git add .
+  434  git commit -m 'Changed CNAME to "web.cv"'
+  435  git remote
+  436  git remote rm origin
+  437  git remote add github https://github.com/ouinon/server-maintenance-webcv.git
+  438  git push github gh-pages
+  439  ssh_c 
+  440  ll
+  441  pwd
+  442  ll
+  443  ssh_c 
+  444  ssh_c
+  445  ssh_c
+  446  ll
+  447  ssh_c
+  448  ll
+  449  cd_sites
+  450  ll
+  451  ls --color=auto
+  452  ls 
+  453  ls --color=auto
+  454  ls -color=auto
+  455  ll
+  456  ssh_c
+  457  alias
+  458  subl /Users/robertstarbuck/.ssh/known_hosts
+  459  alias
+  460  sP
+  461  subl ~/.ssh/config
+  462  ssh -R 52698:localhost:52698 95.172.27.154
+  463  ssh -R 52698:localhost:52698 95.172.27.154
+  464  ssh -R 52698:localhost:52698 95.172.27.154
+  465  subl ~/.ssh/config
+  466  ssh tagadab
+  467  iptables
+  468  ssh -R 52698:localhost:52698 tagadab
+  469  subl .ssh/config
+  470  ssh -R 52968:localhost:52968 tagadab
+  471  ssh -R 52968:localhost:52968 95.172.27.154
+  472  ssh_c
+  473  ssh ?
+  474  ssh --help
+  475  ifconfig
+  476  alias
+  477  ssh -R 52698:localhost:52698 roo@95.172.27.154
+  478  ssh -R 52698:localhost:52698 root@95.172.27.154
+  479  ssh -R 52698:localhost:52698 root@95.172.27.154
+  480  ll
+  481  alias
+  482  sP
+  483  eB
+  484  ssh_r
+  485  ssh_r
+  486  alias
+  487  sP
+  488  ssh_c
+  489  ssh_c
+  490  ssh_c
+  491  ssh_c
+  492  ssh_c
+  493  ssh_c
+  494  ssh_c
+  495  ssh_c
+  496  ssh_c
+  497  ll
+  498  ssh_c
+  499  ll
+  500  cd node
+  501  node app.js 8090
+  502  ll
+  503  cd ../
+  504  ll
+  505  npm install --save-dev grunt-contrib-clean grunt-autoprefixer grunt-contrib-concat grunt-contrib-copy grunt-contrib-cssmin grunt-filerev grunt-usemin grunt-contrib-htmlmin 
+  506  npm install --save-dev grunt-contrib-compass
+  507  grunt compass
+  508  grunt grunt-compass
+  509  npm
+  510  grunt grunt-contrib-compass
+  511  npm install grunt-contrib-compass --save-dev
+  512  grunt compass
+  513  grunt compass --force
+  514  grunt compass
+  515  grunt compass
+  516  grunt compass -v
+  517  npm install --save-dev load-grunt-tasks
+  518  grunt
+  519  grunt -v
+  520  grunt dist
+  521  grunt build
+  522  clear
+  523  clear
+  524  grunt build
+  525  grunt build
+  526  grunt build
+  527  grunt build
+  528  grunt build -v
+  529  grunt compass -v
+  530  grunt build -v
+  531  grunt build -v
+  532  grunt build -v
+  533  grunt build
+  534  grunt build
+  535  grunt build
+  536  chmod dist/ 777
+  537  chmod -R 777 dist/
+  538  ll
+  539  grunt build
+  540  grunt build
+  541   chown -R $USER:$GROUP .
+  542   chown -R $USER:$GROUP .*
+  543  sudo chown -R $USER:$GROUP .*
+  544  ll
+  545  sudo chown -R $USER:$GROUP .
+  546  grunt build
+  547  grunt build
+  548  grunt build
+  549  grunt build
+  550  grunt build -v
+  551  grunt build
+  552  grunt build
+  553  npm install --save-dev grunt-processhtml
+  554  grunt build
+  555  grunt build
+  556  npm install --save-dev grunt-processhtml
+  557  grunt build
+  558  grunt build
+  559  grunt build
+  560  npm install grunt-ng-annotate --save-dev
+  561  grunt build
+  562  grunt build
+  563  grunt ngAnnotate
+  564  grunt ngAnnotate
+  565  npm install grunt-contrib-uglify --save-dev
+  566  grunt dist
+  567  grunt build
+  568  grunt build
+  569  grunt build
+  570  grunt build
+  571  cd dist/
+  572  apachectl restart
+  573  sudo apachectl restart
+  574  sudo apachectl restart
+  575  grunt wiredep
+  576  cd ../
+  577  ll
+  578  bower search angular-bootstrap
+  579  bower install angular-bootstrap --save-dev
+  580  grunt wiredep
+  581  grunt wiredep
+  582  grunt build
+  583  sudo apachectl restart
+  584  sudo apachectl restart
+  585  sudo apachectl configtest
+  586  sudo apachectl configtest
+  587  sudo apachectl restart
+  588  sudo apachectl restart
+  589  grunt build
+  590  grunt build
+  591  grunt build
+  592  grunt build
+  593  grunt build
+  594  grunt build
+  595  sudo apachectl restart
+  596  grunt build
+  597  sudo apachectl restart
+  598  grunt build
+  599  grunt build
+  600  grunt build
+  601  grunt build
+  602  grunt build
+  603  grunt build
+  604  grunt build
+  605  sudo apachectl restart
+  606  sudo apachectl restart
+  607  git status
+  608  subl .gitignore 
+  609  subl .gitignore 
+  610  git status
+  611  git add node_modules/*
+  612  git status
+  613  git add package.json 
+  614  git status
+  615  git add Gruntfile.js .gitignore 
+  616  git commit -m 'Created a build process'
+  617  git remote
+  618  git remote rename pegs bitbucket
+  619  git remote
+  620  git push bitbucket master
+  621  git status
+  622  git status
+  623  git status
+  624  git status
+  625  git status
+  626  git log --pretty=format: --name-only --diff-filter=A | sort - | sed '/^$/d'
+  627  clear
+  628  git remove logs/
+  629  git rm logs/
+  630  git rm logs/ -r
+  631  git rm logs/ -rf
+  632  git status
+  633  git add .
+  634  git commit -m 'Changes to files in order to allow for minification, small improvments made to the js'
+  635  git push bitbucket master
+  636  alias
+  637  sH
+  638  history
+  639  history 605
+  640  sudo apachectl restart
+  641  history > subl
