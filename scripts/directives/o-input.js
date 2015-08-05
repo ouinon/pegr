@@ -19,7 +19,7 @@ angular.module('pegsApp')
       scope:{
       	inpModel:'=ngModel',
       	disabled:'=ngDisabled',
-        placeHolder:'=ouinonPlaceholder',
+        placeHolder:'=ngPlaceholder',
       	name:'@',
       	classList:'@class'
       },

@@ -19,7 +19,8 @@ var pegValues = {
 	'b':'9'
 }
 
-angular.module('pegsApp',['ngCookies','ngResource','ui.bootstrap.buttons','ui.router']).config(
+angular.module('pegsApp',['ngCookies','ngResource','ui.bootstrap.buttons','ui.router'])
+.config(['$locationProvider','$stateProvider',
 	function($locationProvider,$stateProvider){
 	    $stateProvider.state('home', {
 			url: "/",
@@ -30,9 +31,9 @@ angular.module('pegsApp',['ngCookies','ngResource','ui.bootstrap.buttons','ui.ro
 	    $locationProvider.html5Mode(true);
 
 	}
-).value('pegValues',pegValues);
+]).value('pegValues',pegValues);
 
-angular.module('pegsApp').factory('notify',['$resource', function($resource) {
+angular.module('pegsApp').factory('notify',['$resource',function($resource) {
    
 	$resource('https://ouinon.cloudant.com/pegger/');
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="pegsApp">
+<html ng-app="pegsApp" ng-strict-di>
 <head>
 	<meta charset="UTF-8">
 	<title></title>
@@ -25,21 +25,27 @@
 			</div>
 		</div>
 	</footer>
+	<!-- build:js scripts/lib.js -->
 	<!-- bower:js -->
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 	<script src="bower_components/angular-resource/angular-resource.js"></script>
-	<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 	<!-- endbower -->
+	<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+	<!-- /build -->
+	<!-- build:js scripts/project.js -->
 	<script src="scripts/routes.js"></script>
 	<script src="scripts/controllers/home.js"></script>
 	<script src="scripts/directives/o-input.js"></script>
 	<script src="scripts/directives/placeholder.js"></script>
+	<!-- /build -->
 
+	<!-- build:remove -->
 	<script type="text/javascript" src="http://localhost:48626/takana.js"></script>
 	<script type="text/javascript">
 	  takanaClient.run({host: 'localhost:48626'});
 	</script>
+	<!-- /build -->
 </body>
 </html>

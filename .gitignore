@@ -1,4 +1,6 @@
 .env
 .tmp
+.sass-cache
+logs/**
 dist/**
 ignore/**

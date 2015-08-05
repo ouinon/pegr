@@ -1,7 +1,6 @@
 angular.module('pegsApp').controller('HomeCtrl',
-	['pegValues','$scope','$cookies','$http','$resource','$sce','$window','$timeout',function(pegValues,$scope,$cookies,$http,$resource,$sce,$window,$timeout) {
-
-	// private functions
+	['pegValues','$scope','$cookies','$http','$resource','$sce','$window','$timeout',
+	function(pegValues,$scope,$cookies,$http,$resource,$sce,$window,$timeout) {
 
 	var placeHolderFlash = function(message){
 		$scope.placeHolder = message;
@@ -73,22 +72,26 @@ angular.module('pegsApp').controller('HomeCtrl',
 		}else{
 			inputAr = [input];
 		}
-		if(input){
+
+		if(!input){
+			$scope.validPeg = false;
+		}else{
 			var added = [];
 			inputAr.map(function(inputval,index){
 
 				var result = convert(inputval.toLowerCase());
-				
-				$scope.validPeg = (result.val && !result.error);
-
+				if(!$scope.validPeg){
+					$scope.validPeg = (result.val && !result.error);
+				}
 				colsAr = colsAr.concat(result.cols);
-
+				// Ensure that the peg isn't added twice to the result
 				if(added.indexOf(result.input) === -1){
 					pegsAr.push(result);
 					added.push(result.input);
 				}
 
 				if(delimitMatches && delimitMatches[index]){
+					// Get the delimitting characters between words
 					var delimitConcat = delimitMatches[index].replace(/.{1}/g,' ').split(' ');
 					// Remove the last element, it's always one longer than it needs to be.
 					delimitConcat.pop();
@@ -104,8 +107,6 @@ angular.module('pegsApp').controller('HomeCtrl',
 			if(input.length < 50){
 				html = $sce.trustAsHtml(resultToHTML(colsAr));
 			}
-		}else{
-			$scope.validPeg = false;
 		}
 
 		$scope.inputHTML = html;
@@ -133,7 +134,6 @@ angular.module('pegsApp').controller('HomeCtrl',
 		var intNew = 0;
 		var intUpdate = 0;
 		var intExist = 0;
-
 
 		$scope.pegsNew.forEach(function(peg){
 
@@ -168,7 +168,7 @@ angular.module('pegsApp').controller('HomeCtrl',
 				user.pegs = $scope.pegs;
 				var sArr = ['','s'];
 				var msgArr = [];
-
+				// Populate the message array
 				if(intNew){
 					msgArr.push(intNew+' Peg'+sArr[Number(Boolean(intNew-1))]+' Added');
 				}
@@ -202,12 +202,14 @@ angular.module('pegsApp').controller('HomeCtrl',
 
 	};
 
+	// $scope and variable declarations.
 	$scope.pegs = {};
 	$scope.pegsNew = [];
 	$scope.rowlayout = false;
 	$scope.inputHTML;
 	$scope.userId;
 	$scope.userName;
+	$scope.validPeg = false;
 	$scope.placeHolder = 'New Pegs Here…';
 
 	var user;
@@ -217,14 +219,13 @@ angular.module('pegsApp').controller('HomeCtrl',
 			method: 'PUT'
 		}
 	});
+
 	$http.get('/node/auth/google/callback/verify').success(function(data,status){
 		if(data.LoggedIn && data.LoggedIn === true){
 			if(data.UserId){
 
 				$scope.userId = data.UserId;
 				$scope.userName = data.Name;
-
-				console.log($scope.userName);
 
 				Res.get({id:$scope.userId},
 					function(result){

@@ -19,5 +19,8 @@
     "angular-cookies": "~1.4.3",
     "angular-ui-router": "~0.2.15",
     "angular-resource": "~1.4.3"
+  },
+  "devDependencies": {
+    "angular-bootstrap": "~0.13.2"
   }
 }

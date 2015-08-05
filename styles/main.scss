@@ -1,10 +1,10 @@
 @import 'stablegrid';
 $newPeg:$c_C;
 body{
-	padding:2rem 0 5rem;
+	padding:2rem 0 5rem !important;
 	font-family:'Anonymous Pro';
 	font-weight:700;
-	font-size:2rem;
+	font-size:2rem !important;
 }
 .o-cte{
 	padding:0 4rem;
@@ -15,9 +15,9 @@ body{
 .btn{
 	font-weight:700;
 	font-family:'Anonymous Pro';
-	font-size: 2rem;
+	font-size: 2rem !important;
 	width:auto;
-	border-radius: 0.5rem;
+	border-radius: 0.5rem !important;
 	&.c_Clear{	
 		label{
 			padding:0 0.5rem !important;
@@ -32,6 +32,9 @@ body{
 	width:100%;
 	margin-left: -50%;
 	&.Error{
+		text-transform: uppercase;
+		color:$DK3;
+		font-weight: bold;
 		line-height:1rem;
 		height:1rem;
 		bottom:0;
@@ -64,6 +67,8 @@ body{
 	line-height:6rem;
 	height:6rem;
 	.cll{
+		font-family:'Anonymous Pro';
+		font-weight: bold;
 		&:first-child{
 			text-align:right;
 			margin-left:0%;

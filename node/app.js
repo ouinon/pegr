@@ -134,7 +134,7 @@ app.get('/auth/google/logout',
 
         res.clearCookie('UserId');
         res.clearCookie('Name');
-        res.clearCookie('AuthSession');
+        res.clearCookie('AuthSession'); 
         req.logout();
         res.send(JSON.stringify({LoggedIn:false}));
 
