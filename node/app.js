@@ -5,11 +5,11 @@ passport = require('passport'),
 sessions = require('express-session'),
 cookieParser = require('cookie-parser'),
 util = require('util'),
-Cloudant = require('Cloudant'),
+Cloudant = require('cloudant'),
 GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
 // Load Environment Variables
-env(__dirname + '/../.env');
+env(__dirname + '/.env');
 
 var cloudant = Cloudant({
     account: process.env.CLOUDANT_ACCOUNT,
