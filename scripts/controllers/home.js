@@ -214,7 +214,7 @@ angular.module('pegsApp').controller('HomeCtrl',
 
 	var user;
 	var placeholderDefault = $scope.placeHolder;
-	var Res = $resource('http://local.pegs.website/other/:id',{'id':'@id'},{
+	var Res = $resource('/cloudant/:id',{'id':'@id'},{
 		update: {
 			method: 'PUT'
 		}
