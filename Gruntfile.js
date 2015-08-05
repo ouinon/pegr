@@ -90,7 +90,6 @@ module.exports = function(grunt) {
           cwd: '',
           dest: 'dist',
           src: [
-            '.env',
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
