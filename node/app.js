@@ -168,7 +168,7 @@ app.get('/auth/google/callback',
     }
 );
 // Incase '/' is registered instead of '/index.html'
-app.get('/',function(){
+app.get('/',function(req, res){
     res.redirect('/index.html');
 });
 // Handle everything else, 404s etc.
