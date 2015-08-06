@@ -8,6 +8,13 @@ util = require('util'),
 Cloudant = require('cloudant'),
 GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
+if(!process.argv[2].match(/^(PRD|LOC)$/)){
+    console.log('Startup variables incorrect');
+    console.log('process.argv[2] should equal PRD or LOC');
+    console.log('process.argv[3] is the port number');
+    process.exit(1);
+}
+
 // Load Environment Variables
 env(__dirname + '/.env');
 
@@ -33,7 +40,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new GoogleStrategy({
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL: "/node/auth/google/callback"
+        callbackURL: process.env['GOOGLE_CALLBACK_'+process.argv[2]]
     },
     function(accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
@@ -176,4 +183,4 @@ app.use(function(req, res){
    res.sendStatus(404);
 });
 
-app.listen(process.argv[2]);
+app.listen(process.argv[3]);

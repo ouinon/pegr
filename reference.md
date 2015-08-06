@@ -15,3 +15,5 @@ http://arguments.callee.info/2010/04/20/running-apache-and-node-js-together/
 [All about how Proxies work](http://stackoverflow.com/questions/224664/difference-between-proxy-server-and-reverse-proxy-server)
 
 [Placeholder Directive](http://stackoverflow.com/questions/17286693/binding-the-placeholder-to-the-model-causes-ng-change-to-execute-on-load-in-ie)
+
+[Running Node as a Service](http://stackoverflow.com/questions/4681067/how-to-run-a-node-js-application-as-its-own-process/28542093#28542093)
