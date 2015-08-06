@@ -2,7 +2,10 @@
     
     RewriteEngine on
 
-    RewriteRule ^node/(.+) {$NODE_URL}/$1 [P,L]
+    SetEnvIf Host "local.pegs.website" NODE_URL=http://local.pegs.website:8090
+    SetEnvIf Host "pegr.ouinon.co" NODE_URL=http://pegr.ouinon.co:8090
+
+    RewriteRule ^node/(.+) http://%{HTTP_HOST}:8090/$1 [P,L]
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule . index.html [L]
