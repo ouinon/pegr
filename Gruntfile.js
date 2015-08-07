@@ -178,7 +178,35 @@ module.exports = function(grunt) {
           ]
         }
       }
-    }
+    },
+    atomizer: {
+        // Example 1: Simple usage. Parse files and create CSS.
+        // Ideally you'd also want to pass a namespace to deal with specificity.
+      example1: {
+          options: {
+              // namespace: '#atomic',
+              // bring a sample config file
+              //config: 'sampleconf.js',
+              rules: 'atomic-conf.js',
+              // config will override any thing declared in configFile
+          },
+          files: [
+              {
+                  src: ['index.html','templates/home.html'],
+                  dest: 'styles/_properties.scss'
+              }
+          ]
+      }
+    },
+    watch: {
+      scripts: {
+        files: ['index.html','templates/home.html'],
+        tasks: ['atomizer'],
+        options: {
+          spawn: false,
+        },
+      },
+    },
   });
   
   // Source
@@ -205,16 +233,5 @@ module.exports = function(grunt) {
     // 'usemin',
     // 'htmlmin'
   ]);
-  // grunt-contrib-compass
-  // "grunt-contrib-clean"
-  // "grunt-autoprefixer"
-  // "grunt-contrib-concat"
-  // "grunt-contrib-copy"
-  // "grunt-contrib-cssmin"
-  // "grunt-filerev"
-  // "grunt-usemin"
-  // "grunt-contrib-htmlmin"
-
-// npm install --save-dev grunt-contrib-clean grunt-autoprefixer grunt-contrib-concat grunt-contrib-copy grunt-contrib-cssmin grunt-filerev grunt-usemin grunt-contrib-htmlmin 
 
 };

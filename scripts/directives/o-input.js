@@ -10,7 +10,7 @@ angular.module('pegsApp')
     return {
       template:
     		'<div class="o-input" class="{{classList}}" ng-class="{\'focus\':focus}">'+
-    			'<input name="{{name}}" autocomplete="off" placeholder="{{placeHolder}}" ng-disabled="disabled" ng-model="inpModel" ng-trim="false" ng-focus="focus=1" ng-blur="focus=0" type="text">'+
+    			'<input name="{{name}}" autocomplete="off" placeholder="{{placeHolder}}" ng-disabled="disabled" ng-model="inpModel" ng-trim="false" ng-focus="focus=1" ng-blur="focus=0" type="text" autofocus>'+
     			'<ng-transclude></ng-transclude>'+
     		'</div>',
       replace:true,

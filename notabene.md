@@ -8,3 +8,6 @@
 Instead you could do something with SetEnvIf, in your instance however you've simply used the HTTP_HOST variable.
 
 SetEnvIf Host "local.pegs.website" NODE_URL=http://local.pegs.website:8090
+#Emmet for atomic rule conf
+{{matcher:'pd$r',noParams:true,styles:{'padding':'$rem'}},
+}*10

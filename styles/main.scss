@@ -1,5 +1,9 @@
 @import 'stablegrid';
 $newPeg:$c_C;
+::selection {
+    color: $DK0; 
+    background: rgba($c_C,.5);
+}
 body{
 	padding:2rem 0 5rem !important;
 	font-family:'Anonymous Pro';
@@ -57,7 +61,7 @@ body{
 	}
 	&.Row{
 		> .box{
-			width:100%;
+			width:100% !important;
 		}
 	}
 }
