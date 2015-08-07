@@ -171,7 +171,7 @@ module.exports = function(grunt) {
         expand:true,
         files: {
           'dist/scripts/project.js': [
-            '.tmp/scripts/routes.js',
+            '.tmp/scripts/main.js',
             '.tmp/scripts/controllers/home.js',
             '.tmp/scripts/directives/o-input.js',
             '.tmp/scripts/directives/placeholder.js'
