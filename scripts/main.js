@@ -19,16 +19,9 @@ var pegValues = {
 	'b':'9'
 };
 
-angular.module('pegsApp',['ngCookies','ngResource','ui.bootstrap.buttons','ui.router'])
-.config(['$locationProvider','$stateProvider',
-	function($locationProvider,$stateProvider){
-	    $stateProvider.state('home', {
-			url: "/",
-			templateUrl: "templates/home.html",
-			controller: 'HomeCtrl'
-	    });
-
+angular.module('pegsApp',['ngCookies','ngResource','ui.bootstrap.buttons'])
+.config(['$locationProvider',
+	function($locationProvider){
 	    $locationProvider.html5Mode(true);
-
 	}
 ]).value('pegValues',pegValues);

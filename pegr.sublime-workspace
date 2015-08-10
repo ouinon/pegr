@@ -1,0 +1,2039 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"pl",
+				"placeHolder"
+			],
+			[
+				"is",
+				"isAuthenticated"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"ng",
+				"ng-app	AngularJS"
+			],
+			[
+				"marin",
+				"margin-bottom"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"to",
+				"toUpperCase〔function〕"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"border-rad",
+				"border-top-right-radius"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"border-ra",
+				"border-top-left-radius"
+			],
+			[
+				"border-",
+				"border-radius"
+			],
+			[
+				"li",
+				"lisi	list-style-image"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"vis",
+				"visibility"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"wash",
+				"wash70"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"T",
+				"Tabs-options"
+			],
+			[
+				"f",
+				"fl	float"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"BAC",
+				"background-color"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"mi",
+				"middle"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"border-bo",
+				"border-bottom"
+			],
+			[
+				"inlin",
+				"inline"
+			],
+			[
+				"v",
+				"visible"
+			],
+			[
+				"borde",
+				"border-box"
+			],
+			[
+				"el",
+				"angular.element"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"isD",
+				"angular.isDefined"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"paddig",
+				"padding-bottom"
+			],
+			[
+				"w",
+				"wm-tbr	writing-mode: tb-rl;"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"content",
+				"content-box"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"ov",
+				"ovx	overflow-x: ${1:hidden};"
+			],
+			[
+				"o_f",
+				"o_fcell"
+			],
+			[
+				"fon-",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"FONT",
+				"font-weight"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"TRA",
+				"transform"
+			],
+			[
+				"bor",
+				"border-box"
+			],
+			[
+				"impo",
+				"important"
+			],
+			[
+				"cu",
+				"cur	cursor: ${pointer};"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"$root",
+				"$rootScope	AngularJS"
+			],
+			[
+				"name",
+				"angular: $document"
+			],
+			[
+				"radio",
+				"radio_rows"
+			],
+			[
+				"for",
+				"angular.forEach"
+			],
+			[
+				"fo",
+				"angular.forEach"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"whi",
+				"white-space"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"question",
+				"questionnaire"
+			],
+			[
+				"$route",
+				"$routeParams	AngularJS"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"db",
+				"d:b	display:block"
+			],
+			[
+				"pre",
+				"pre-line"
+			],
+			[
+				"white",
+				"white-space"
+			],
+			[
+				"$rout",
+				"$routeParams	AngularJS"
+			],
+			[
+				"skills",
+				"skills_list01"
+			],
+			[
+				"nor",
+				"normal"
+			],
+			[
+				"lh",
+				"lh	line-height"
+			],
+			[
+				"queston",
+				"questiongap"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"line",
+				"lineheight"
+			],
+			[
+				"gr",
+				"green"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"ff",
+				"font-family"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"Rew",
+				"RewriteRule"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"blu",
+				"blue_1"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"tras",
+				"transparent"
+			],
+			[
+				"light",
+				"lighten"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"half",
+				"halfwidth"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"oo",
+				"oo_searchbar"
+			],
+			[
+				"route",
+				"angular: $routeParams"
+			],
+			[
+				"root",
+				"angular: $rootScope"
+			],
+			[
+				"l",
+				"l	left"
+			],
+			[
+				"after",
+				"after_posta"
+			],
+			[
+				"array",
+				"array"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 47,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"mer",
+				"Emmet: Merge Lines"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"m",
+				"Emmet: Merge Lines"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"pref",
+				"Preferences: Settings - User"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"SET TEXT",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"set jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"snippet html",
+				"Snippet: html"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"lin",
+				"JSLint"
+			],
+			[
+				"lint",
+				"JSLint"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Preferences: MarkdownEditing Settings – User"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"pre",
+				"Preferences: Settings - User"
+			],
+			[
+				"synax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"eve",
+				"Emmet: Evaluate Math Expression"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"markdow",
+				"Preferences: MarkdownEditing Settings – User"
+			],
+			[
+				"binding",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"emmet abb",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"markdown fix",
+				"MarkdownEditing: Fix Underlined Headers"
+			],
+			[
+				"GFM",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"markdown user",
+				"Preferences: MarkdownEditing Settings – User"
+			],
+			[
+				"mar",
+				"Preferences: MarkdownEditing Settings – User"
+			],
+			[
+				"mark",
+				"MarkdownEditing: Fix Underlined Headers"
+			],
+			[
+				"omnipre",
+				"Preferences: OmniMarkupPreviewer Settings – Default"
+			],
+			[
+				"omni",
+				"Preferences: OmniMarkupPreviewer Settings – User"
+			],
+			[
+				"line",
+				"Permute Lines: Unique"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"link",
+				"Snippet: Markdown_link_(mdl)"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"preference",
+				"Preferences: Settings - Default"
+			],
+			[
+				"preferences user",
+				"Preferences: Settings - User"
+			],
+			[
+				"apa",
+				"Set Syntax: Apache Conf"
+			],
+			[
+				"br",
+				"SFTP: Browse Server…"
+			],
+			[
+				"apache",
+				"Set Syntax: Apache Conf"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"w",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"pro",
+				"Project: Edit Project"
+			],
+			[
+				"project",
+				"Project: Edit Project"
+			],
+			[
+				"gis",
+				"Gist: Insert Gist"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"rena",
+				"Emmet: Rename Tag"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"borw",
+				"Preferences: Browse Packages"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"ui",
+				"Emmet: Update Image Size"
+			],
+			[
+				"reid",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"merg",
+				"Emmet: Merge Lines"
+			],
+			[
+				"format",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"set java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"mer	",
+				"Emmet: Merge Lines"
+			],
+			[
+				"sf",
+				"SFTP: Browse Server…"
+			],
+			[
+				"prety",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pretyy",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"sytax j",
+				"Set Syntax: JSON"
+			],
+			[
+				"syjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax angular",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"mergi",
+				"Emmet: Merge Lines"
+			],
+			[
+				"set syntax jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set syntax json",
+				"Set Syntax: JSON"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"trailing",
+				"Trailing Spaces: Toggle Trailing Spaces Highlighting"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"package manag",
+				"TeX Live Package Manager: Manage Packages"
+			],
+			[
+				"empty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pret",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"set syntax",
+				"Set Syntax: JSON"
+			],
+			[
+				"JSON",
+				"Set Syntax: JSON"
+			],
+			[
+				"join",
+				"Emmet: Split\\Join Tag"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"MER",
+				"Emmet: Merge Lines"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"set sy t",
+				"Set Syntax: Textile"
+			],
+			[
+				"",
+				"AngularJS: Toggle - Enable data- Prefix"
+			],
+			[
+				"angul",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"tag",
+				"Emmet: Rename Tag"
+			],
+			[
+				"MERGE",
+				"Emmet: Merge Lines"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"tidy",
+				"Tidy HTML"
+			],
+			[
+				"sft",
+				"SFTP: Browse Server…"
+			],
+			[
+				"set apa	",
+				"Set Syntax: Apache Conf"
+			],
+			[
+				"bro",
+				"SFTP: Browse Server…"
+			],
+			[
+				"tid",
+				"Tidy HTML"
+			],
+			[
+				"set ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"set ap",
+				"Set Syntax: Apache Conf"
+			],
+			[
+				"sytax ap",
+				"Set Syntax: Apache Conf"
+			],
+			[
+				"set sy apac",
+				"Set Syntax: Apache Conf"
+			],
+			[
+				"set sytax apa",
+				"Set Syntax: Apache Conf"
+			],
+			[
+				"prefer",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pac",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 583.0
+	},
+	"console":
+	{
+		"height": 179.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/robertstarbuck/Sites/pegs"
+	],
+	"file_history":
+	[
+		"/Users/robertstarbuck/Sites/pegs/pegr.sublime-project",
+		"/Users/robertstarbuck/Documents/Parola.md",
+		"/Users/robertstarbuck/Sites/pegs/styles/_temp_properties.scss",
+		"/Users/robertstarbuck/Sites/pegs/index.html",
+		"/Users/robertstarbuck/Sites/pegs/configFileOnly.css",
+		"/Users/robertstarbuck/Sites/pegs/.htaccess",
+		"/Users/robertstarbuck/Sites/pegs/notabene.md",
+		"/private/etc/apache2/httpd.conf",
+		"/Users/robertstarbuck/Sites/pegs/reference.md",
+		"/Users/robertstarbuck/Sites/pegs/node/package.json",
+		"/Users/robertstarbuck/Sites/pegs/templates/home.html",
+		"/Users/robertstarbuck/Sites/pegs/styles/main.scss",
+		"/Users/robertstarbuck/Sites/pegs/styles/_reset.scss",
+		"/Users/robertstarbuck/Sites/pegs/scripts/routes.js",
+		"/Users/robertstarbuck/.bash_profile",
+		"/Users/robertstarbuck/Sites/pegs/styles/_atom.scss",
+		"/Users/robertstarbuck/Sites/pegs/node/app.js",
+		"/Users/robertstarbuck/Sites/pegs/node/.env",
+		"/Users/robertstarbuck/Sites/pegs/httpd-pegs.conf",
+		"/Users/robertstarbuck/Sites/pegs/package.json",
+		"/Users/robertstarbuck/Sites/pegs/rules.atom",
+		"/Users/robertstarbuck/Sites/pegs/node_modules/grunt-atom-css/tasks/atom.js",
+		"/Users/robertstarbuck/Sites/pegs/node_modules/grunt-atom-css/node_modules/atom-css/src/atom.js",
+		"/Users/robertstarbuck/Sites/pegs/node_modules/grunt-atom-css/node_modules/atom-css/src/atom-sass.js",
+		"/Users/robertstarbuck/Sites/pegs/node_modules/grunt-atom-css/node_modules/atom-css/index.js",
+		"/Users/robertstarbuck/Sites/pegs/scripts/controllers/home.js",
+		"/Users/robertstarbuck/Sites/pegs/.gitignore",
+		"/Users/robertstarbuck/Sites/httpd-vhosts.conf",
+		"/Users/robertstarbuck/.ssh/id_rsa",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-vjx8gn/app.js",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-vw6sfy/app.js",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-iltcrk/app.js",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-usool5/app.js",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-hxvk1h/ouinon.conf",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-inu6xh/.htaccess",
+		"/private/etc/hosts",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-i4zjrj/transfer",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-i3eqq9/ouinon.conf",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-m12fiy/app.js",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-h_rcm2/app.js",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-3j4_dc/app.js",
+		"/Users/robertstarbuck/Sites/pegs/dist/node/app.js",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-oag96b/error",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-dabld4/custom.aliases.bash",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-051v_q/custom.aliases.bash",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-1s5sxv/app.js",
+		"/Users/robertstarbuck/Sites/pegs/Gruntfile.js",
+		"/tmp/subl stdin ApUKQH.txt",
+		"/Users/robertstarbuck/Sites/pegs/styles/stablegrid.scss",
+		"/Users/robertstarbuck/Sites/pegs/bower_components/angular-ui-router/release/angular-ui-router.js",
+		"/Users/robertstarbuck/Sites/pegs/styles/__mixins.scss",
+		"/Users/robertstarbuck/Sites/pegs/scripts/directives/o-input.js",
+		"/Users/robertstarbuck/Sites/pegs/scripts/directives/placeholder.js",
+		"/Users/robertstarbuck/Sites/pegs/bower.json",
+		"/Users/robertstarbuck/Sites/pegs/styles/_color.scss",
+		"/Users/robertstarbuck/Sites/pegs/styles/_properties.scss",
+		"/Users/robertstarbuck/Sites/pegs/styles/_media_rules.scss",
+		"/Users/robertstarbuck/Sites/pegs/dist/templates/home.html",
+		"/Users/robertstarbuck/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-bm3z2z/.profile",
+		"/Users/robertstarbuck/Desktop/WCV.txt",
+		"/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/rsub-gnnzd7/custom.aliases.bash",
+		"/Users/robertstarbuck/Sites/pegs/ignore/google_passport_return.json",
+		"/Users/robertstarbuck/Sites/pegs/.env",
+		"/Users/robertstarbuck/Sites/pegs/ignore/json_structure.json",
+		"/Users/robertstarbuck/Sites/pegs/styles/_media.scss",
+		"/Users/robertstarbuck/Sites/pegs/images/logo.svg",
+		"/Users/robertstarbuck/Sites/pegs/logs/apache/error",
+		"/Users/robertstarbuck/Desktop/routine.txt",
+		"/Users/robertstarbuck/Sites/pegs/ignore/majorSystemConversion.js",
+		"/Users/robertstarbuck/Sites/pegs/app.old.js",
+		"/Users/robertstarbuck/Sites/pegs/tasks.md",
+		"/Users/robertstarbuck/Sites/pegs/ignore/cloudant-cookie-example.json",
+		"/Users/robertstarbuck/Sites/pegs/node/views/index.ejs",
+		"/Users/robertstarbuck/Sites/pegs/app.js",
+		"/Users/robertstarbuck/Sites/pegs/error_log",
+		"/Users/robertstarbuck/Sites/pegs/transfer_log",
+		"/Users/robertstarbuck/Sites/pegs/public/index.html",
+		"/private/etc/apache2/other/robstarbuck.conf",
+		"/private/etc/apache2/other/httpd-vhosts.conf",
+		"/Users/robertstarbuck/Sites/Learning/express/passport-google/examples/oauth2/app.old02.js",
+		"/Users/robertstarbuck/Sites/Learning/express/passport-google/examples/oauth2/app.old.js",
+		"/Users/robertstarbuck/Sites/Learning/express/expressworks/param.js",
+		"/Users/robertstarbuck/Sites/Learning/express/expressworks/static-02.js",
+		"/Users/robertstarbuck/Sites/Learning/express/expressworks/form-04.js",
+		"/Users/robertstarbuck/Sites/Learning/express/expressworks/styl/main.styl",
+		"/Users/robertstarbuck/Sites/Learning/express/passport-google/examples/oauth2/app.js",
+		"/Users/robertstarbuck/Sites/Learning/express/expressworks/styl.js",
+		"/Users/robertstarbuck/Sites/Learning/express/expressworks/query.js",
+		"/Users/robertstarbuck/Sites/Learning/express/expressworks/books.js",
+		"/Users/robertstarbuck/Sites/Learning/express/express.md",
+		"/Users/robertstarbuck/Sites/Learning/expressworks/form-04.js",
+		"/Users/robertstarbuck/Sites/Learning/functional-javascript/trampoline-15.js",
+		"/Users/robertstarbuck/Sites/github/ouinon/tags/blogging copy.md",
+		"/Users/robertstarbuck/Sites/github/ouinon/css/main.scss",
+		"/Users/robertstarbuck/Sites/github/ouinon/tags/javascript.md",
+		"/Users/robertstarbuck/Sites/github/ouinon/tags/d3.md",
+		"/Users/robertstarbuck/Sites/github/ouinon/_data/tags.yml",
+		"/Users/robertstarbuck/Sites/github/ouinon/ouinon.init.sh",
+		"/Users/robertstarbuck/Sites/github/ouinon/_config.yml",
+		"/Users/robertstarbuck/Sites/github/ouinon/_includes/head.html",
+		"/Users/robertstarbuck/Sites/github/ouinon/index.html",
+		"/Users/robertstarbuck/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/Users/robertstarbuck/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/Users/robertstarbuck/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/robertstarbuck/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/Users/robertstarbuck/Sites/github/ouinon/_posts/2015-07-20-How-Long-To-Watch-01-of-03.md",
+		"/Users/robertstarbuck/Sites/github/ouinon/_posts/2015-07-20-Title-Case-Modifier-an-Alternative-to-BEM.md",
+		"/Users/robertstarbuck/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/README.md",
+		"/Users/robertstarbuck/Sites/github/ouinon/_drafts/Title-Case-Modifier.md",
+		"/Users/robertstarbuck/Sites/github/ouinon/_posts/2015-07-15-Tips-for-using-Markdown-with-Sublime.md",
+		"/Users/robertstarbuck/Sites/Learning/d3/pack-layout/how-long-to-watch-01/how-long-to-watch-01.init.sh",
+		"/Users/robertstarbuck/Sites/ouinon-blog-03/_posts/2015-07-20-How-Long-To-Watch-01:03.md",
+		"/usr/local/lib/node_modules/grunt-takana/tasks/takana.js",
+		"/Users/robertstarbuck/Sites/Learning/d3/pack-layout/how-long-to-watch-01/.git/hooks/post-commit",
+		"/usr/local/lib/node_modules/grunt-takana/node_modules/takana/bin/setup",
+		"/Users/robertstarbuck/Sites/Learning/git/rebase.md",
+		"/usr/local/lib/node_modules/functional-javascript-workshop/functional-javascript.js",
+		"/usr/local/lib/node_modules/grunt-takana/README.md",
+		"/Users/robertstarbuck/Sites/Learning/d3/pack-layout/how-long-to-watch-01/README.md",
+		"/tmp/subl stdin HOse5u.txt",
+		"/Users/robertstarbuck/Sites/Learning/d3/pack-layout/how-long-to-watch-01/.git/sourcetreeconfig",
+		"/usr/local/lib/node_modules/grunt-takana/node_modules/takana/bin/takana",
+		"/Users/robertstarbuck/Sites/Learning/d3/pack-layout/how-long-to-watch-01/.git/post-commit",
+		"/Users/robertstarbuck/Sites/Learning/d3/pack-layout/how-long-to-watch-01/.git/config",
+		"/Users/robertstarbuck/Desktop/Tim-master/timrc.example",
+		"/usr/local/lib/node_modules/grunt-takana/package.json",
+		"/Users/robertstarbuck/Sites/Learning/playground/d3/layouts/pack/node_modules/grunt-takana/node_modules/takana/node_modules/forever/node_modules/nconf/test/fixtures/hierarchy/user.json"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/robertstarbuck/Sites/pegs",
+			"<open folders>-.scss",
+			"<open folders>.scss",
+			"<open folders>",
+			"/Users/robertstarbuck/Dropbox/Sites-DB/castle-farm",
+			"/Users/robertstarbuck/Dropbox/Sites-DB/castle-farm/_sass",
+			"/Users/robertstarbuck/Sites/stablegrid/app/",
+			"/Users/robertstarbuck/Sites/stablegrid",
+			"/Users/robertstarbuck/Sites/goatgrid/app",
+			"",
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"top",
+			"text-align",
+			"'ta",
+			"ta",
+			"topR",
+			"topL",
+			"top",
+			"_temp_properties.scss",
+			"rem",
+			"%",
+			".5",
+			"matcher",
+			"text-align",
+			"'ta",
+			"ta",
+			"90",
+			"80",
+			"1",
+			"height",
+			"rem",
+			" !important",
+			"rem",
+			"1rem",
+			"1r",
+			"matcher",
+			"1r",
+			"rem",
+			"padding",
+			"pd",
+			"right",
+			"left",
+			"LR",
+			"left",
+			"'padding-right'",
+			"-top",
+			":",
+			"pd",
+			"foobb",
+			"glob",
+			"sass",
+			"glob",
+			"globa",
+			"yellow",
+			"source",
+			"NODE_URL",
+			"mod_env",
+			"NODE_URL",
+			"local",
+			"pegr",
+			"PROJECTPATH",
+			"www",
+			"google",
+			"callback",
+			"NODE_URL",
+			"cloudant",
+			"Cloudant",
+			"app",
+			"copy",
+			"clean",
+			"/Users/robertstarbuck/Sites/pegs/",
+			"path",
+			"ENVIRO",
+			"apache",
+			"Directory",
+			"other",
+			"validPeg",
+			"DK3",
+			"cll",
+			"body",
+			"btn",
+			"padding",
+			"body",
+			"$stateProvider",
+			"css",
+			"copy",
+			"cssmin",
+			"uglify",
+			"pegs/",
+			"/pegs/",
+			"clean",
+			"dist/",
+			"pegs/",
+			"\"",
+			"dist/",
+			"bootstra",
+			"clean",
+			"local.pegs.website",
+			"local.pegs",
+			"removetmp",
+			"clean",
+			"process",
+			",",
+			"ngAnnotate",
+			"Annot",
+			"ngAnnot",
+			"test",
+			"cssmin",
+			"autopref",
+			"concat",
+			"clean",
+			"compass",
+			"<%= yeoman.dist %>",
+			"grunt-contrib-compass",
+			"<%= yeoman.app %>",
+			"yeoman.app",
+			"grunt-contrib-compass",
+			"pegValues",
+			"console.log",
+			"newPeg",
+			"red",
+			"0,0,255",
+			"opacity",
+			"home",
+			"convert",
+			"error",
+			"Peg",
+			"peg",
+			"<g",
+			"logo",
+			"svg",
+			"-placeholder",
+			"placeholder",
+			"search",
+			"placeholder",
+			"bind",
+			"New",
+			"placeholder",
+			">Peg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"tpR",
+			"tpL",
+			"$scope",
+			"Useful, ex",
+			"Assign",
+			"title-case",
+			"lower-case",
+			"upper-case",
+			"effect",
+			"affect",
+			"be",
+			"cursor",
+			"contents",
+			"__Find",
+			"__",
+			"their",
+			"worth",
+			"c_C",
+			"$c_A",
+			"pdB0",
+			"m_hide",
+			"m_show",
+			"o-input",
+			"o-tbl",
+			"o-input",
+			"Icn",
+			"i",
+			"",
+			"Tabs",
+			" ",
+			"c_grp",
+			"",
+			" ",
+			"fa fa-over",
+			"'",
+			"\\'",
+			"\"",
+			"\\\"",
+			"\"",
+			"\\'",
+			"\"",
+			"'",
+			"\\'",
+			"'",
+			"\\'",
+			"\n\nquestionnaireUrl",
+			"\\r\\n\"id\"",
+			"",
+			"\\r\\n",
+			"",
+			"listSpacing",
+			"headingMarginTop",
+			"pageHeaderBackgroundColor",
+			"pageHeaderPaddingY",
+			"pageHeaderMarginY",
+			"'sequence-header','style':'rows',",
+			"'",
+			"\\'",
+			"'",
+			"\"content\":",
+			"\"type\":",
+			"\"content\"",
+			"\"type\"",
+			"\\'",
+			".",
+			".outerMargin",
+			"outerMargin",
+			"\",\\r\\n",
+			"FEATURES",
+			"FEATURES!",
+			"]\\r\\n",
+			"'",
+			"",
+			"B1",
+			"A2",
+			"",
+			"http",
+			"\"",
+			"header",
+			"",
+			"\\n\\r",
+			"",
+			"\\n",
+			"",
+			"&nbsp;·",
+			"·&nbsp;",
+			"bg_0",
+			"$bg_1",
+			"$bg_light",
+			"div",
+			" ",
+			"",
+			"\\n\\rrgb(",
+			"·&nbsp;",
+			"·&nbps;",
+			"-",
+			".",
+			"$postData",
+			"</tr><tr>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".gitignore",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 47,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_orig.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Seti_UI/Langs/Git.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 33.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mde":
+	{
+		"height": 110.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"output.tlmgr":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pegr.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"inpu",
+				"scripts/directives/o-input.js"
+			],
+			[
+				"hom",
+				"templates/home.html"
+			],
+			[
+				"home",
+				"templates/home.html"
+			],
+			[
+				"htt",
+				"httpd-pegs.conf"
+			],
+			[
+				"sta",
+				"styles/stablegrid.scss"
+			],
+			[
+				"main",
+				"styles/main.scss"
+			],
+			[
+				"prop",
+				"styles/_properties.scss"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"htacc",
+				".htaccess"
+			],
+			[
+				"ht",
+				"httpd-pegs.conf"
+			],
+			[
+				"ref",
+				"reference.md"
+			],
+			[
+				"app",
+				"node/app.js"
+			],
+			[
+				"htacce",
+				".htaccess"
+			],
+			[
+				"gru",
+				"Gruntfile.js"
+			],
+			[
+				"home.j",
+				"scripts/controllers/home.js"
+			],
+			[
+				"gr",
+				"Gruntfile.js"
+			],
+			[
+				"ignore",
+				".gitignore"
+			],
+			[
+				".th",
+				".htaccess"
+			],
+			[
+				"",
+				"scripts/controllers/home.js"
+			],
+			[
+				"home.js",
+				"scripts/controllers/home.js"
+			],
+			[
+				"rout",
+				"scripts/routes.js"
+			],
+			[
+				"reset",
+				"styles/_reset.scss"
+			],
+			[
+				"bower",
+				"bower.json"
+			],
+			[
+				"place",
+				"scripts/directives/placeholder.js"
+			],
+			[
+				"mix",
+				"styles/__mixins.scss"
+			],
+			[
+				"o",
+				"scripts/directives/o-input.js"
+			],
+			[
+				"media",
+				"styles/_media_rules.scss"
+			],
+			[
+				"refer",
+				"reference.md"
+			],
+			[
+				"pl",
+				"scripts/directives/placeholder.js"
+			],
+			[
+				"input",
+				"scripts/directives/o-input.js"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"pla",
+				"scripts/directives/placeholder.js"
+			],
+			[
+				"o-",
+				"scripts/directives/o-input.js"
+			],
+			[
+				"env",
+				".env"
+			],
+			[
+				"access",
+				".htaccess"
+			],
+			[
+				"rou",
+				"scripts/routes.js"
+			],
+			[
+				"err",
+				"logs/apache/error"
+			],
+			[
+				"route",
+				"scripts/routes.js"
+			],
+			[
+				"stab",
+				"styles/stablegrid.scss"
+			],
+			[
+				"logo",
+				"images/logo.svg"
+			],
+			[
+				"meid",
+				"styles/_media_rules.scss"
+			],
+			[
+				"pe",
+				"scripts/pegs.js"
+			],
+			[
+				"mai",
+				"styles/main.scss"
+			],
+			[
+				"grun",
+				"Gruntfile.js"
+			],
+			[
+				"t",
+				"tasks.md"
+			],
+			[
+				"ini",
+				"ouinon.init.sh"
+			],
+			[
+				"conf",
+				"_config.yml"
+			],
+			[
+				"he",
+				"_includes/head.html"
+			],
+			[
+				"init",
+				"ouinon.init.sh"
+			],
+			[
+				"confi",
+				"_config.yml"
+			],
+			[
+				"user",
+				"node_modules/grunt-takana/node_modules/takana/node_modules/forever/node_modules/nconf/test/fixtures/hierarchy/user.json"
+			],
+			[
+				"foo",
+				"_includes/footer.html"
+			],
+			[
+				"about",
+				"about.md"
+			],
+			[
+				"pag",
+				"_layouts/page.html"
+			],
+			[
+				"po",
+				"_layouts/post.html"
+			],
+			[
+				"high",
+				"_sass/_syntax-highlighting.scss"
+			],
+			[
+				"sys",
+				"_sass/_syntax-highlighting.scss"
+			],
+			[
+				"sy",
+				"_sass/_syntax-highlighting.scss"
+			],
+			[
+				"s",
+				"_sass/stable.scss"
+			],
+			[
+				"st",
+				"_sass/stable.scss"
+			],
+			[
+				"ab",
+				"about.md"
+			],
+			[
+				"post",
+				"_layouts/post.html"
+			],
+			[
+				"pa",
+				"_layouts/page.html"
+			],
+			[
+				"fo",
+				"_includes/footer.html"
+			],
+			[
+				"foot",
+				"_includes/footer.html"
+			],
+			[
+				"pos",
+				"_layouts/post.html"
+			],
+			[
+				"tag",
+				"tags.html"
+			],
+			[
+				"ta",
+				"tags.html"
+			],
+			[
+				"lay",
+				"_layouts/default.html"
+			],
+			[
+				"abou",
+				"about.md"
+			],
+			[
+				"hea",
+				"_includes/header.html"
+			],
+			[
+				"portf",
+				"_data/portfolio.yml"
+			],
+			[
+				"de",
+				"_layouts/default.html"
+			],
+			[
+				"layou",
+				"_layouts/default.html"
+			],
+			[
+				"con",
+				"_config.yml"
+			],
+			[
+				"logo-sq",
+				"_includes/logo-square.svg"
+			],
+			[
+				"pro",
+				"_sass/_properties.scss"
+			],
+			[
+				"medi",
+				"_sass/_media_rules.scss"
+			],
+			[
+				"med",
+				"_sass/_media.scss"
+			],
+			[
+				"an",
+				"angular-contact.js"
+			],
+			[
+				"pr",
+				"_sass/_properties.scss"
+			],
+			[
+				"op",
+				"_sass/_properties.scss"
+			],
+			[
+				"c",
+				"contact.html"
+			],
+			[
+				"cont",
+				"contact.html"
+			],
+			[
+				"def",
+				"_layouts/default.html"
+			],
+			[
+				"me",
+				"_sass/_media.scss"
+			],
+			[
+				"heade",
+				"_includes/header.html"
+			],
+			[
+				"head",
+				"_includes/header.html"
+			],
+			[
+				"ma",
+				"css/main.scss"
+			],
+			[
+				"blog",
+				"_layouts/blog_by_tag.html"
+			],
+			[
+				"col",
+				"_sass/_color.scss"
+			],
+			[
+				"svg",
+				"_includes/logo-wide.svg"
+			],
+			[
+				"for",
+				"_includes/footer.html"
+			],
+			[
+				"min",
+				"css/main.scss"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"header",
+				"_includes/header.html"
+			],
+			[
+				"lo",
+				"_includes/logo-wide.svg"
+			],
+			[
+				"ym",
+				"_config.yml"
+			],
+			[
+				"data",
+				"_data/tags.yml"
+			],
+			[
+				"plus",
+				"_site/jekyll/update/number-number-plus.html"
+			],
+			[
+				"num",
+				"_posts/2015-07-05-number-number-plus.markdown"
+			],
+			[
+				"h",
+				"_includes/head.html"
+			],
+			[
+				"syt",
+				"_sass/_syntax-highlighting.scss"
+			],
+			[
+				"hed",
+				"_includes/head.html"
+			],
+			[
+				"vi",
+				"viewall.html"
+			],
+			[
+				"d",
+				"_layouts/default.html"
+			],
+			[
+				"view",
+				"viewall.html"
+			],
+			[
+				"page",
+				"_layouts/page.html"
+			],
+			[
+				"far",
+				"farming.md"
+			],
+			[
+				"pae",
+				"_layouts/page.html"
+			],
+			[
+				"yml",
+				"_config.yml"
+			],
+			[
+				"stable",
+				"app/scss/stablegrid.scss"
+			],
+			[
+				"ex",
+				"app/views/extended.html"
+			],
+			[
+				"reses",
+				"app/stablegrid/_reset.scss"
+			],
+			[
+				"colo",
+				"app/stablegrid/_color.scss"
+			],
+			[
+				"gurnt",
+				"Gruntfile.js"
+			],
+			[
+				"gur",
+				"Gruntfile.js"
+			],
+			[
+				"_te",
+				"app/styles/_test.css"
+			],
+			[
+				"stat",
+				"app/styles/_states.css"
+			],
+			[
+				"mei",
+				"app/styles/_media.scss"
+			],
+			[
+				"m_",
+				"app/styles/_media_rules.scss"
+			],
+			[
+				"state",
+				"app/styles/_states.css"
+			],
+			[
+				"bo",
+				"bower.json"
+			],
+			[
+				"type",
+				"bower_components/angular-bootstrap/template/typeahead/typeahead-popup.html"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"_",
+				"app/styles/_color.scss"
+			],
+			[
+				"states",
+				"app/styles/_states.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/robertstarbuck/Sites/ouinon-wcvq/ouinon_wcvq.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 260.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}

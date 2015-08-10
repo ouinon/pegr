@@ -99,6 +99,7 @@ module.exports = function(grunt) {
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*',
             'fonts/{,*/}*.*',
+            'logs/apache',
           ]
         }]
       },

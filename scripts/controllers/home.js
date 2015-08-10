@@ -56,6 +56,9 @@ angular.module('pegsApp').controller('HomeCtrl',
 	// $scope functions
 
 	$scope.$watch('inputPeg',function(input){
+
+		console.log(input,"input");
+
 		var pegsAr = [];
 		var inputAr = [];
 		var colsAr = [];
@@ -99,7 +102,7 @@ angular.module('pegsApp').controller('HomeCtrl',
 					// #FAIRE - There must be an easier way to write this.
 					if(delimitMatches.length===++index && input.substr(-1).match(delimitSingleRg)){
 						delimitConcat.pop();
-					};
+					}
 					colsAr = colsAr.concat(delimitConcat);
 				}
 
@@ -202,6 +205,7 @@ angular.module('pegsApp').controller('HomeCtrl',
 
 	};
 
+	// alert("yaow");
 	// $scope and variable declarations.
 	$scope.pegs = {};
 	$scope.pegsNew = [];
@@ -247,7 +251,7 @@ angular.module('pegsApp').controller('HomeCtrl',
 					}
 				);
 			}
-		};
+		}
 	});
 
 }]);
