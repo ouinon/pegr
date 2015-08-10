@@ -70,32 +70,6 @@ app.use(sessions({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// #RES I'm not sure why it won't let me use app.get('/index.html'
-// app.get('/index.html', function(req, res){
-
-//     res.setHeader('Content-Type', 'application/json');
-
-//     if (req.isAuthenticated()) {
-
-//         cloudant.auth({account:process.env.CLOUDANT_ACCOUNT, cookie:res.cookie('AuthSession')},function(err, body, headers){
-
-//             console.log(err, body, headers);
-
-//         });
-
-//         res.send(JSON.stringify({loggedIn: true }));
-
-//     }else{
-//         // If the user is not logged in remove their cookies
-//         res.clearCookie('UserId');
-//         res.clearCookie('Name');
-//         res.clearCookie('AuthSession');
-
-//         // #FAIRE logout of Cloudant as well.
-//         res.send(JSON.stringify({loggedIn: false }));
-//     }
-// });
-
 app.get('/auth/google',
     passport.authenticate('google',{ scope: ['https://www.googleapis.com/auth/userinfo.email'] })
 );
@@ -158,9 +132,6 @@ app.get('/auth/google/callback',
           if (err)
             return console.log('Error authenticating: ' + err.message);
 
-            // console.log('Got cookie for %s: %s', username, headers['set-cookie']);
-
-            // req.login(req.user,function(){});
             // Get the cookie that it's proposing to set and split it.
             var cookieAr = headers['set-cookie'][0].replace(/[ \w-]+=/g,'').split(';');
 
