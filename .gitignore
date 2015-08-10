@@ -2,5 +2,6 @@
 .tmp
 .sass-cache
 logs/**
+node/.env
 dist/**
 ignore/**
